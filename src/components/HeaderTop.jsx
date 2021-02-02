@@ -36,7 +36,8 @@ export default function HeaderTop({ token }) {
             <IconMail src={mail} alt="logo mail" />
           </LinkMail>
           <a href="https://www.linkedin.com/company/favart/">
-            <IconLinkedin src={linkedin} alt="logo linkedin" />{" "}
+            <IconLinkedin src={linkedin} alt="logo linkedin" />
+          </a>
         </ContainerIcon>
 
         <ContainerConnexionSentence>

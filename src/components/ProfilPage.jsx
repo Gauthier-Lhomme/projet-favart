@@ -15,8 +15,7 @@ import {
   CardText,
   CardBdd,
 } from "../styled-components/ProfilPage.jsx";
-import ContactUs from "./ContactUs.jsx";
-import UpdateClient from "./UpdateClientForm.jsx";
+import ContactUs from "./ContactMail.jsx";
 
 export default () => {
   const [clients, setClients] = useState([]);
