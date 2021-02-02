@@ -17,6 +17,8 @@ export const DivHeaderTop = styled.div`
   }
 `;
 
+export const LinkLogo = styled(Link)``;
+
 export const Logo = styled.img`
   height: 8vh;
   width: 15vw;
@@ -43,6 +45,8 @@ export const IconLinkedin = styled.img`
   padding-right: 2vw;
 `;
 
+export const LinkMail = styled(Link)``;
+
 export const IconMail = styled.img`
   width: 2vw;
 `;
@@ -68,7 +72,7 @@ export const ContainerConnexionSentence = styled.div`
   }
 `;
 
-export const ConnexionSentence = styled.p`
+export const ConnexionSentence = styled(Link)`
   font-size: 1.5rem;
   @media ${Device.mobile} {
     font-size: 1rem;

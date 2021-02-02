@@ -17,7 +17,7 @@ import {
   SpanLink,
 } from "../styled-components/Connection";
 
-export default function connection() {
+export default function Connection() {
   return (
     <Background>
       <ContainerInscription>
