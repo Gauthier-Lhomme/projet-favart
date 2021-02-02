@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main"; //We'll have to change to "action" page
+import ActionPage from "../ActionPage";
 import Footer from "../Footer";
 
 import {
@@ -43,7 +43,7 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <Main />
+            <ActionPage />
             <Footer />
           </>
         )}

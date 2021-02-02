@@ -7,14 +7,17 @@ export const DivHeaderTop = styled.div`
   background-color: white;
   align-items: center;
   justify-content: space-evenly;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  z-index: 15;
   top: 0;
+  width: 100%;
   @media ${Device.mobile} {
     justify-content: space-evenly;
     height: 10vh;
   }
 `;
+
+export const LinkLogo = styled(Link)``;
 
 export const Logo = styled.img`
   height: 8vh;
@@ -42,6 +45,8 @@ export const IconLinkedin = styled.img`
   padding-right: 2vw;
 `;
 
+export const LinkMail = styled(Link)``;
+
 export const IconMail = styled.img`
   width: 2vw;
 `;
@@ -67,7 +72,7 @@ export const ContainerConnexionSentence = styled.div`
   }
 `;
 
-export const ConnexionSentence = styled.p`
+export const ConnexionSentence = styled(Link)`
   font-size: 1.5rem;
   @media ${Device.mobile} {
     font-size: 1rem;

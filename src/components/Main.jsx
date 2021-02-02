@@ -1,6 +1,8 @@
 import React from "react";
 import HeaderMenu01 from "./header/HeaderMenu01";
 import HeaderBody01 from "./header/HeaderBody01";
+import woods from "../assets/images/woods.jfif";
+import docteur from "../assets/images/docteur.jfif";
 import {
   H1Left,
   ContainerWhy,
@@ -14,115 +16,171 @@ import {
   PWhom,
   Body,
   PMap,
-  Map,
+  List,
+  SubTitle,
+  Bold,
+  Listli,
+  ListliWhom,
+  FSentence,
+  FPagraph,
 } from "../styled-components/MainStyle";
 
 export default function MainPage() {
   return (
-    <>
-      <Body>
-        <H1Left>Pourquoi FAVART ?</H1Left>
-        <ContainerWhy>
-          <ImgWhy
-            src="https://pbs.twimg.com/media/D7G9CRpWwAAUVCV.jpg"
-            alt="Représentants de l'entreprise FAVART"
-          ></ImgWhy>
-          <PWhy>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perferendis eveniet sit unde magnam magni consequuntur omnis
-            blanditiis exercitationem aliquam officiis reprehenderit numquam
-            quasi dolorum, eum quibusdam maiores nam quidem rem. Minima
-            aspernatur sunt numquam tempora impedit architecto similique
-            delectus fugiat maiores, quod, veniam sint a. Dolore expedita sit
-            possimus. Fugit ducimus voluptatum soluta eum, consequatur rem
-            officiis maiores velit aut. Accusamus nostrum, veritatis deserunt
-            vero asperiores incidunt quidem maxime sunt optio fugit tempora
-            aspernatur minima adipisci perspiciatis distinctio. In quibusdam,
-            veritatis totam perspiciatis sequi accusamus omnis aut commodi quia
-            quisquam. Quas ab minima adipisci libero rem veniam error dolor est
-            ipsam saepe dicta, doloribus nulla corrupti voluptas culpa harum
-            accusamus repudiandae perferendis enim architecto a quos magnam ad
-            similique! Autem! Asperiores expedita exercitationem atque rem.
-            Nihil harum fugit illum aliquid perferendis non, corrupti alias at
-            laudantium magnam laborum dolorum, hic nam dolor mollitia amet. Quod
-            ex atque facilis cupiditate dolorem?
-          </PWhy>
-        </ContainerWhy>
+    <Body>
+      <FSentence>
+        Explorer de nouveaux moyens d’action pour relever les grands défis de
+        notre société
+      </FSentence>
+      <FPagraph>
+        Favart est une agence d’ingénierie en innovation sociétale. Nous
+        imaginons, développons et essaimons depuis plus de 10 ans des solutions
+        de rupture à fort impact sociétal afin de répondre aux situations de
+        fragilité de personnes (précarité, exclusion), de territoires (pauvreté,
+        chômage, logement), de systèmes (Education, Action Sociale, Santé, …).
+        Nous mettons en œuvre de nouveaux moyens d’action à destination des
+        entreprises, des associations, des services de l’Etat et des
+        collectivités locales afin de répondre aux enjeux des territoires.
+      </FPagraph>
+      <H1Left>Pourquoi FAVART ?</H1Left>
+      <ContainerWhy>
+        <ImgWhy src={woods} alt="Forêt avec rayons de soleil"></ImgWhy>
+        <PWhy>
+          <h3>Ce que les crises nous apprennent :</h3>
+          <List>
+            <Listli>
+              Il n’y a aucune création de valeur durable dans un environnement
+              économique, social et environnemental totalement dégradé.
+            </Listli>
+            <Listli>
+              Aucun des outils économiques, juridiques et financiers actuels
+              n’est adapté à la résolution des crises sociale, environnementale
+              et sanitaire actuelles et à venir
+            </Listli>
+          </List>
+          Le monde d’avant la crise de 2020 favorise la création de valeur
+          marchande et les activités humaines permettant de maximiser la marge
+          des produits-services (valeur d’échange) avec des processus de
+          production délocalisés, immatériels et mondialisés, sans se préoccuper
+          de la valeur d’usage (utilité sociale). dès l'apparition de cette
+          crise, le monde “d’après” à mis la priorité sur les activités ayant la
+          plus forte valeur d’usage : notamment la santé, le logement,
+          l’alimentation, l’éducation, et la mise en œuvre de processus de
+          production et de distribution relocalisés, matériels et de proximité.
+        </PWhy>
+      </ContainerWhy>
 
-        <H2Title>Lorem ipsum dolet set</H2Title>
+      <H2Title>Notre raison d’être</H2Title>
 
-        <PTitle>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
-          doloremque obcaecati, nam facilis odio officia deserunt voluptate quam
-          earum exercitationem. Ipsam itaque non doloremque quis placeat illo
-          necessitatibus nesciunt aperiam.
-        </PTitle>
+      <PTitle>
+        Face à la gravité des problèmes sociaux et environnementaux avec des
+        conséquences déjà irréversibles, il ne s’agit plus d’adapter à la marge
+        le système de production, consommation, protection sociale mais de
+        changer de paradigme en transformant fondamentalement les règles du jeu
+        économique, juridique et financier.
+        <br />
+        <br />
+        Favart contribue au changement de paradigme afin de renverser les
+        contraintes à partir desquelles sont organisées les activités humaines :
+        Passer d’une approche systémique dans laquelle le système financier
+        domine le système humain qui lui-même domine l’écosystème naturel, à une
+        approche holistique dans laquelle le capital naturel nourrit le capital
+        humain qui guide le capital financier.
+        <br></br>
+        Notre ambition est d’expérimenter et de développer des solutions de
+        rupture favorisant le passage :
+        <List>
+          <Listli>De l’abondance à la frugalité</Listli>
+          <Listli>
+            De l’économie de la rareté et exclusive à l’économie du bien commun
+            et inclusive
+          </Listli>
+          <Listli>Du pyramidal à l’horizontal et au collaboratif</Listli>
+          <Listli>Du progrès au bien-être de chacune</Listli>
+        </List>
+      </PTitle>
 
-        <H1Right>Auprès de qui ?</H1Right>
+      <H1Right>Auprès de qui ?</H1Right>
 
-        <ContainerWhom>
-          <PWhom>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-            voluptatum corrupti asperiores dolore ullam quo sunt ratione,
-            aperiam at adipisci tenetur iure reprehenderit minus voluptatem
-            iusto! Iusto laudantium ipsa architecto. Quaerat minus iure ullam
-            quia dignissimos et aspernatur illum velit mollitia rerum
-            consequatur, ipsa ipsum, culpa voluptatem. Accusamus unde
-            repudiandae pariatur explicabo, modi at eos veritatis nulla dolore.
-            Necessitatibus, possimus! Nesciunt totam repudiandae sit quia
-            possimus iste ut quo fugit assumenda soluta corrupti tempora error
-            fuga, vel molestiae perspiciatis blanditiis in suscipit id animi
-            eveniet officiis beatae? Asperiores, quae praesentium. Quasi,
-            laborum optio obcaecati illum laboriosam exercitationem, laudantium
-            molestiae sequi adipisci fugit nulla repellendus pariatur minima.
-            Modi, nihil corporis nobis cumque veritatis facilis ipsa fugit
-            delectus cupiditate dolores eligendi dolore. Esse ea cupiditate ut,
-            reiciendis accusamus rem temporibus dolorem deleniti eos quae
-            eligendi libero consequatur delectus minus quod numquam mollitia?
-            Consectetur, nulla recusandae asperiores adipisci pariatur odit
-            tenetur eveniet quos.
-          </PWhom>
+      <ContainerWhom>
+        <PWhom>
+          Favart accompagne depuis 2009, l’amorçage et le développement de
+          solutions concrètes et radicales capables de transformer la vie des
+          habitants sur les territoires en répondant aux situations de fragilité
+          des :
+          <List>
+            <ListliWhom>Personnes : précarité, exclusion</ListliWhom>
+            <ListliWhom>
+              Territoires : pauvreté, chômage, mal-logement
+            </ListliWhom>
+            <ListliWhom>
+              Politiques publiques : éducation, action sociale, santé, sport
+            </ListliWhom>
+          </List>
+          <p>
+            Les solutions que nous développons répondent à quatre principes :
+          </p>
+          <List>
+            <ListliWhom>
+              Être non extractives en ne consommant aucune ressource rare
+            </ListliWhom>
+            <ListliWhom>
+              Non propriétaires en permettant de rendre les produits-services
+              créés accessibles au plus grand nombre
+            </ListliWhom>
+            <ListliWhom>
+              Inclusives en rendant l'excellence accessible à ceux qui en ont le
+              plus besoin
+            </ListliWhom>
+            <ListliWhom>
+              Être pérenne à travers la recherche d’un profit qui maximise la
+              valeur des capitaux naturels, humains et financiers
+            </ListliWhom>
+          </List>
+        </PWhom>
 
-          <ImgWhom
-            src="https://www.sobizhub.org/images/lab%C3%A9lisation_FI_roubaix.jpg"
-            alt="Présentation projet french impact"
-          />
-        </ContainerWhom>
+        <ImgWhom
+          src={docteur}
+          alt="Jonas Salk, inventeur du vaccin contre la polio"
+        />
+      </ContainerWhom>
+      <SubTitle>
+        "Changer la vie des personnes les plus fragiles. Annihiler les
+        situations de précarité sur les territoires."
+      </SubTitle>
 
-        <H2Title>Lorem ipsum dolor set</H2Title>
+      <H1Left>Avec qui ?</H1Left>
 
-        <PTitle>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-          est! Soluta, magni odio facilis provident quae ducimus perspiciatis
-          tenetur ab! Consectetur praesentium maiores ut corporis ratione quae?
-          Laudantium, amet commodi.Cum hic sit debitis eius dignissimos dolores
-          quas illo, placeat, nam qui, id exercitationem. A sint ab asperiores
-          voluptatibus? Quo repellat nulla natus nobis nostrum facilis earum
-          assumenda velit eaque!
-        </PTitle>
-
-        <H1Left>Notre territorialité</H1Left>
-
-        <PMap>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          architecto labore cupiditate perspiciatis quibusdam repellat
-          distinctio deserunt voluptatibus harum, sed provident, quas quam neque
-          facilis vel tempora hic. Necessitatibus, ullam? Impedit repellat
-          commodi dolorem doloribus saepe asperiores quis praesentium expedita
-          esse! Qui officia nemo placeat recusandae voluptatem! Mollitia omnis
-          consectetur debitis voluptatibus! Tenetur, laudantium consequuntur hic
-          eveniet eaque distinctio? Similique. Placeat sunt architecto expedita
-          tempora officiis at quaerat distinctio aliquid aspernatur suscipit sed
-          fugit, perferendis libero. Provident, quibusdam minus, sapiente fuga
-          at rerum modi saepe neque enim sunt corporis eius.
-        </PMap>
-
-        <Map>
-          <a href="https://placeholder.com">
-            <img src="https://via.placeholder.com/816" alt="" />
-          </a>
-        </Map>
-      </Body>
-    </>
+      <PMap>
+        Mobiliser toutes les compétences disponibles au service des habitants
+        des territoires. Les solutions que nous développons s’adresse aux :
+        <List>
+          <Listli>
+            <Bold>Pouvoirs publics/institutionnels</Bold> : Ministères, Agences
+            nationales, Services déconcentrés de l’Etat, Départements
+          </Listli>
+          <Listli>
+            <Bold>Collectivités locales</Bold> : Communautés d’agglomérations,
+            Communes / Services municipaux
+          </Listli>
+          <Listli>
+            <Bold>Entreprises </Bold>: fonctions/services Stratégie, Innovation,
+            Responsabilité Sociétales des Entreprises, Finance
+          </Listli>
+          <Listli>
+            <Bold>Associations</Bold>
+          </Listli>
+          <Listli>
+            <Bold>Fonds d’investissement, Family Office</Bold>
+          </Listli>
+          <Listli>
+            <Bold>Fondations</Bold>
+          </Listli>
+          <Listli>
+            <Bold>Citoyens</Bold>
+          </Listli>
+        </List>
+      </PMap>
+    </Body>
   );
 }

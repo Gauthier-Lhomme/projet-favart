@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div>
           <ul>
-            <Li>Tourcoing</Li>
+            <Li>Le Touquet</Li>
             <Li>94, rue La Fayette</Li>
             <Li>75009 PARIS</Li>
           </ul>

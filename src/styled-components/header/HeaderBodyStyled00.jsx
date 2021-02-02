@@ -3,9 +3,10 @@ import { Device } from "../../assets/Device/Device.jsx";
 import { Link } from "react-router-dom";
 
 export const Page = styled.div`
-  background-color: #e5e5e5;
+  background-color: #f2f8fc;
   height: 86vh;
   display: flex;
+  margin-top: 14vh;
   @media ${Device.mobile} {
     padding-bottom: 30vh;
   }

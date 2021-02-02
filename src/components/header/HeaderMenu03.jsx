@@ -13,13 +13,13 @@ export default function HeaderMenu() {
     <>
       <ContainerHeaderMenu>
         <ContainerHeaderMenuLink>
-          <MenuLink to="/sommaire">00 /</MenuLink>
-          <MenuLink to="/"> 01 /</MenuLink>
-          <MenuLink to="/agissons"> 02 / </MenuLink>
+          <MenuLink to="/">00 /</MenuLink>
+          <MenuLink to="/main"> 01 /</MenuLink>
+          <MenuLink to="/agissons"> 02 </MenuLink>
           <MenuLinkIlsEtElles to="/ilsetelles">
-            03 - ils et elles le font avec nous /
+            / 03 - ils et elles le font avec nous
           </MenuLinkIlsEtElles>
-          <MenuLink to="/action"> 04</MenuLink>
+          <MenuLink to="/action"> / 04</MenuLink>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
       <HeaderBody />

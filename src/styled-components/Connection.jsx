@@ -56,6 +56,7 @@ export const ContainerLogo = styled.div`
 
 export const Logo = styled.img`
   width: 28vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   @media ${Device.mobile} {
     width: 35vw;
     margin-bottom: 2vh;
@@ -101,7 +102,6 @@ export const H2 = styled.h2`
   }
 `;
 
-//questionnaire
 export const Formulaire = styled.div`
   display: flex;
   flex-direction: column;

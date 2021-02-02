@@ -13,11 +13,11 @@ export default function HeaderMenu() {
     <>
       <ContainerHeaderMenu>
         <ContainerHeaderMenuLink>
-          <MenuLinkSommaire to="/sommaire">00 - Sommaire /</MenuLinkSommaire>
-          <MenuLink to="/"> 01 /</MenuLink>
-          <MenuLink to="/agissons"> 02 /</MenuLink>
-          <MenuLink to="/ilsetelles"> 03 / </MenuLink>
-          <MenuLink to="/action"> 04 </MenuLink>
+          <MenuLinkSommaire to="/">00 - Sommaire </MenuLinkSommaire>
+          <MenuLink to="/main">/ 01 </MenuLink>
+          <MenuLink to="/agissons">/ 02 </MenuLink>
+          <MenuLink to="/ilsetelles">/ 03 </MenuLink>
+          <MenuLink to="/action">/ 04 </MenuLink>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
       <HeaderBody />
