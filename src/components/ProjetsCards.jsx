@@ -1,19 +1,20 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import {
+  Page,
+  FirstTitle,
   PictureContent,
   Picture,
   Flex,
   Button,
   Image,
-  Title,
   Container,
   LogoTitle,
   Content,
   H3,
-} from "../styled-components/TestModalStyle";
+} from "../styled-components/ProjetsCardsStyle";
 
-export default function DataTest() {
+export default function ProjetsCards() {
   const [projets, setProjets] = useState([]);
   const [isDisplay, setDisplay] = useState({ isDisplay: false, id: "" });
 
@@ -22,15 +23,18 @@ export default function DataTest() {
       .get("http://localhost:5050/projets")
       .then(function (response) {
         setProjets(response.data);
-        console.log(response.data);
       })
       .catch(function (error) {});
   }, []);
 
   return (
     <>
+    <Page>
+        <FirstTitle>
+          S’autoriser le droit à l’expérimentation territoriale avec les acteurs
+          engagés
+        </FirstTitle>
       <Flex>
-        <Title>Nos projets en cours</Title>
         {projets.map((projet) => (
           <div key={projet.id}>
             <Button
@@ -41,7 +45,7 @@ export default function DataTest() {
               <Image src={projet.logo} />
             </Button>
             <PictureContent
-              onClick={() => console.log(projet.id)}
+              onClick={() => projet.id}
               className={
                 isDisplay.isDisplay === true && isDisplay.id === projet.id
                   ? ""
@@ -72,6 +76,7 @@ export default function DataTest() {
           </div>
         ))}
       </Flex>
+      </Page>
     </>
   );
 }

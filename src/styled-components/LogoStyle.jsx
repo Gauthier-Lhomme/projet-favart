@@ -2,24 +2,25 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const Img = styled.img`
-  height: auto;
-  width: 100%;
+  max-height: 20vh;
+  max-width: 100%;
+  padding-left:10vw;
   @media ${Device.mobile} {
     margin-left: 60vw;
-    height: 15vh;
-    width: 50vw;
+    max-height: 25vh;
+    max-width: 60vw;
   }
 `;
 
 export const Testing = styled.div`
-  height: 60vh;
+  height: 30vh;
   width: 25vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
   @media ${Device.mobile} {
-    height: 30vh;
+    height: 25vh;
     padding-bottom: 8vh;
   }
 `;

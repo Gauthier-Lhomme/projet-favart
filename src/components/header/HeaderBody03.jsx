@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FlexProjet from "../FlexProjet";
-import Carousel from "../Carousel";
+import ProjetsCards from "../ProjetsCards";
+import Logo from "../Logo";
 import Footer from "../Footer";
 
 import {
@@ -45,8 +45,8 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <FlexProjet />
-            <Carousel />
+            <ProjetsCards />
+            <Logo />
             <Footer />
           </>
         )}

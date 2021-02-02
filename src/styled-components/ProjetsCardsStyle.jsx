@@ -1,6 +1,21 @@
 import { Device } from "../assets/Device/Device";
 import styled from "styled-components";
 
+export const Page = styled.div`
+  background-color: #e5e5e5;
+  border: 2px solid red;
+`;
+
+export const FirstTitle = styled.p`
+  margin: 11.5vh 7vw 14vh 7vw;
+  font-size: 3rem;
+  text-align: center;
+  @media ${Device.mobile} {
+    font-size: 1.5rem;
+    margin-bottom: 14vh;
+  }
+`;
+
 export const PictureContent = styled.div`
   position: relative;
   top: -20vh;
@@ -20,11 +35,12 @@ export const PictureContent = styled.div`
 `;
 
 export const Picture = styled.img`
+background-color:white;
   height: 25vh;
   width: auto;
   @media ${Device.mobile} {
-    height: 20vh;
-    width: 60vw;
+    height: 16vh;
+    width: 38vw;
   }
 `;
 export const Button = styled.button`
@@ -105,6 +121,7 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
+background-color:white;
   max-height: 15vh;
   max-width: 18vw;
   @media ${Device.mobile} {
@@ -113,9 +130,4 @@ export const Image = styled.img`
   }
 `;
 
-export const Title = styled.h1`
-  margin-bottom: 6vh;
-  @media ${Device.mobile} {
-    margin-bottom: 4vh;
-  }
-`;
+
