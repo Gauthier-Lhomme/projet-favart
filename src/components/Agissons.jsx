@@ -39,11 +39,12 @@ import {
   P1,
   P2,
   P3,
+  Background,
 } from "../styled-components/Agissons.jsx";
 
 export default function Agissons() {
   return (
-    <>
+    <Background>
       <P>Mettre en œuvre les solutions de rupture à fort impact sociétal</P>
       <Ingenieries>
         <Button1 href="#experimentation">
@@ -149,6 +150,6 @@ export default function Agissons() {
         </CardText4>
         <CardImg4 src={juridique}></CardImg4>
       </Card4>
-    </>
+    </Background>
   );
 }

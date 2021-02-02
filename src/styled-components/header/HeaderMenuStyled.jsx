@@ -7,8 +7,9 @@ export const ContainerHeaderMenu = styled.div`
   align-items: center;
   height: 6vh;
   background-color: #1f89d1;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
   top: 8vh;
   @media ${Device.mobile} {
     display: flex;

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
+export const Background = styled.div`
+  background-color: #f2f8fc;
+`;
+
 export const P = styled.p`
   font-size: 2.5rem;
   text-align: center;
@@ -33,7 +37,7 @@ export const Card = styled.div`
   }
   @media ${Device.mobile} {
     width: 90vw;
-    height: 100vh;
+    height: 70vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -98,8 +102,8 @@ export const CardImg = styled.img`
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   @media ${Device.mobile} {
-    width: 60vw;
-    left: 14vw;
+    width: 70vw;
+    left: 10vw;
     bottom: -20vh;
   }
 `;
@@ -119,7 +123,7 @@ export const Card2 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 85vh;
+    height: 55vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -186,8 +190,8 @@ export const CardImg2 = styled.img`
   -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
-    width: 60vw;
-    left: 14vw;
+    width: 70vw;
+    left: 10vw;
     bottom: -19vh;
   }
 `;
@@ -207,11 +211,11 @@ export const Card3 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 87vh;
+    height: 70vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-    margin-top: 40vw;
+    margin-top: 50vw;
   }
 `;
 
@@ -271,8 +275,8 @@ export const CardImg3 = styled.img`
   -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
-    width: 60vw;
-    left: 14vw;
+    width: 70vw;
+    left: 10vw;
     bottom: -17vh;
   }
 `;
@@ -293,7 +297,7 @@ export const Card4 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 85vh;
+    height: 70vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -361,8 +365,8 @@ export const CardImg4 = styled.img`
   -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
-    width: 60vw;
-    left: 14vw;
+    width: 70vw;
+    left: 10vw;
     bottom: -19vh;
   }
 `;
