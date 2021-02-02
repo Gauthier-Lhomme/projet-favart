@@ -48,7 +48,7 @@ export default () => {
                 <Card key={i}>
                   <FlexText>
                     <CardText>Prénom : </CardText>
-                    <CardBdd>{client.name}</CardBdd>
+                    <CardBdd>{client.username}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Nom : </CardText>

@@ -13,7 +13,7 @@ import {
   Name,
   Job,
   Company,
-} from "../styled-components/RessourcePage";
+} from "../styled-components/RessourcesExtPage";
 
 import documents from "../assets/Documents/Ressource";
 
@@ -25,7 +25,7 @@ export default function RessourcePage() {
     setLoading(true);
     axios({
       method: "GET",
-      url: `http://localhost:3001/ressources`,
+      url: `http://localhost:3001/ressourcesext`,
     }).then((res) => {
       setRessources(res.data);
       setLoading(false);

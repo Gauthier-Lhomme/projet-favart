@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
 
+import Connexion from "./components/Connection";
 import HeaderTop from "./components/HeaderTop";
 import ClientPage from "./components/ClientPage";
-import Connexion from "./components/Connection";
 import MainPage from "./components/header/HeaderMenu01";
 import Agissons from "./components/header/HeaderMenu02";
 import IlsEtElles from "./components/header/HeaderMenu03";
@@ -17,24 +17,40 @@ import { Reset } from "styled-reset";
 import RessourcePage from "./components/RessourcePage";
 import MentionsLegales from "./components/LegalNotice";
 import ProfilePage from "./components/ProfilPage";
+import ContactMail from "./components/ContactMail";
+import RessourcePage from "./components/RessourcePage";
+import RessourcePageExt from "./components/RessourceExtPage";
+import RessourcesForm from "./components/UpdateRessourcesForm";
+import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
+import DisplayRessources from "./components/DisplayRessources";
+
+import { Switch, Route } from "react-router-dom";
+import { Reset } from "styled-reset";
+
 
 export default function App() {
   const [token, setToken] = useState("");
   return (
     <div>
       <Reset />
-      <HeaderTop />
+      <HeaderTop token={token} />
       <Switch>
-        <ProfilePage />
         <Route exact path="/" component={MainPage} />
         <Route exact path="/mentionslegales" component={MentionsLegales} />
+        <Route exact path="/contact" component={ContactMail} />
         <Route path="/clientpage" component={ClientPage} />
-        <Route exact path="/">
-          <Connexion setToken={setToken} />
+        <Route exact path="/connection">
+          <Connection setToken={setToken} />
         </Route>
         <Route exact path="/sommaire" component={Sommaire} />
+        <Route path="/ressources" component={RessourcePage} />
+        <Route path="/displayressources" component={DisplayRessources} />
+        <Route path="/ressourcesext" component={RessourcePageExt} />
+        <Route path="/addressources" component={RessourcesForm} />
+        <Route path="/addressourcesext" component={RessourcesFormExt} />
+        <Route path="/" component={MainPage} />
+        <Route path="/clientpage" component={ClientPage} />
         <Route path="/agissons" component={Agissons} />
-        <Route path="/connexion" component={Connexion} />
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
         <Route path="/inscription" component={Inscription} />
