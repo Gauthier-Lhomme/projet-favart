@@ -12,6 +12,10 @@ import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
+import ActionPage from "./components/ActionPage";
+import { Reset } from "styled-reset";
+import RessourcePage from "./components/RessourcePage";
+import MentionsLegales from "./components/LegalNotice";
 import ProfilePage from "./components/ProfilPage";
 import ContactMail from "./components/ContactMail";
 import RessourcePage from "./components/RessourcePage";
@@ -32,6 +36,7 @@ export default function App() {
       <HeaderTop token={token} />
       <Switch>
         <Route exact path="/" component={MainPage} />
+        <Route exact path="/mentionslegales" component={MentionsLegales} />
         <Route exact path="/contact" component={ContactMail} />
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/connection">
