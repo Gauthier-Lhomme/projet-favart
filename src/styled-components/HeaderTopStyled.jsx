@@ -67,7 +67,7 @@ export const ContainerConnexionSentence = styled.div`
   }
 `;
 
-export const ConnexionSentence = styled.p`
+export const ConnexionSentence = styled(Link)`
   font-size: 1.5rem;
   @media ${Device.mobile} {
     font-size: 1rem;

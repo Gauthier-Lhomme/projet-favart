@@ -4,7 +4,7 @@ import twitter from "../assets/logo-icon-header/twitter.svg";
 import linkedin from "../assets/logo-icon-header/linkedin.svg";
 import mail from "../assets/logo-icon-header/mail.svg";
 import connect from "../assets/logo-icon-header/connect.svg";
-import { Link } from "react-router-dom";
+import user from "../assets/logo-icon-header/user.svg";
 
 import {
   DivHeaderTop,
@@ -19,27 +19,42 @@ import {
   ConnexionSentence,
 } from "../styled-components/HeaderTopStyled.jsx";
 
-export default function HeaderTop() {
+export default function HeaderTop({ token }) {
   return (
     <>
       <DivHeaderTop>
         <Logo src={logo} alt="logo favart" />
         <ContainerIcon>
-          <IconTwitter src={twitter} alt="logo twitter" />
+          <a href="https://twitter.com/favart_fr">
+            <IconTwitter src={twitter} alt="logo twitter" />
+          </a>
 
-          <IconLinkedin src={linkedin} alt="logo linkedin" />
+          <a href="https://www.linkedin.com/company/favart/">
+            <IconLinkedin src={linkedin} alt="logo linkedin" />{" "}
+          </a>
 
           <IconMail src={mail} alt="logo mail" />
         </ContainerIcon>
 
         <ContainerConnexionSentence>
-          <ConnexionSentence to="/inscription">
-            Connexion / Inscription
-          </ConnexionSentence>
+          {token.length < 1 ? (
+            <ConnexionSentence to="/connexion">
+              Connexion / Inscription
+            </ConnexionSentence>
+          ) : (
+            <ConnexionSentence to="/clientpage"> Mon Profil </ConnexionSentence>
+          )}
         </ContainerConnexionSentence>
-        <ContainerIconConnexion to="/connexion">
-          <IconConnexion src={connect} alt="logo connexion" />
-        </ContainerIconConnexion>
+
+        {token.length < 1 ? (
+          <ContainerIconConnexion to="/connexion">
+            <IconConnexion src={connect} alt="logo connexion" />
+          </ContainerIconConnexion>
+        ) : (
+          <ContainerIconConnexion to="/clientpage">
+            <IconConnexion src={user} alt="logo connexion" />
+          </ContainerIconConnexion>
+        )}
       </DivHeaderTop>
     </>
   );
