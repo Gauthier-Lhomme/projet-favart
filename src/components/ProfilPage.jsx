@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import UpdateClient from "./UpdateClientForm.jsx";
 
 import {
   FlexBox,

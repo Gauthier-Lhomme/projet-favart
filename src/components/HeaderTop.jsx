@@ -7,6 +7,8 @@ import connect from "../assets/logo-icon-header/connect.svg";
 import user from "../assets/logo-icon-header/user.svg";
 
 import {
+  LinkLogo,
+  LinkMail,
   DivHeaderTop,
   Logo,
   ContainerIcon,
@@ -23,17 +25,18 @@ export default function HeaderTop({ token }) {
   return (
     <>
       <DivHeaderTop>
-        <Logo src={logo} alt="logo favart" />
+        <LinkLogo to="/sommaire">
+          <Logo src={logo} alt="logo favart" />
+        </LinkLogo>
         <ContainerIcon>
           <a href="https://twitter.com/favart_fr">
             <IconTwitter src={twitter} alt="logo twitter" />
           </a>
-
+          <LinkMail to="/contact">
+            <IconMail src={mail} alt="logo mail" />
+          </LinkMail>
           <a href="https://www.linkedin.com/company/favart/">
             <IconLinkedin src={linkedin} alt="logo linkedin" />{" "}
-          </a>
-
-          <IconMail src={mail} alt="logo mail" />
         </ContainerIcon>
 
         <ContainerConnexionSentence>

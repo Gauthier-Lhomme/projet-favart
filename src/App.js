@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
 
+import Connexion from "./components/Connection";
 import HeaderTop from "./components/HeaderTop";
 import ClientPage from "./components/ClientPage";
 import MainPage from "./components/header/HeaderMenu01";
@@ -11,6 +12,8 @@ import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
+import ProfilePage from "./components/ProfilPage";
+import ContactMail from "./components/ContactMail";
 import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
@@ -20,6 +23,7 @@ import DisplayRessources from "./components/DisplayRessources";
 import { Switch, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
 
+
 export default function App() {
   const [token, setToken] = useState("");
   return (
@@ -28,6 +32,7 @@ export default function App() {
       <HeaderTop token={token} />
       <Switch>
         <Route exact path="/" component={MainPage} />
+        <Route exact path="/contact" component={ContactMail} />
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/connection">
           <Connection setToken={setToken} />

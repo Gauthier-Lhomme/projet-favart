@@ -16,6 +16,8 @@ export const DivHeaderTop = styled.div`
   }
 `;
 
+export const LinkLogo = styled(Link)``;
+
 export const Logo = styled.img`
   height: 8vh;
   width: 15vw;
@@ -41,6 +43,8 @@ export const IconLinkedin = styled.img`
   padding-left: 2vw;
   padding-right: 2vw;
 `;
+
+export const LinkMail = styled(Link)``;
 
 export const IconMail = styled.img`
   width: 2vw;
