@@ -2,9 +2,8 @@ import { Device } from "../assets/Device/Device";
 import styled from "styled-components";
 
 export const Page = styled.div`
-  background-color: #e5e5e5;
-  border: 2px solid red;
-`;
+  background-color:#F2F8FC;
+    `;
 
 export const FirstTitle = styled.p`
   margin: 11.5vh 7vw 14vh 7vw;

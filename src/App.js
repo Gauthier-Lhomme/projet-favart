@@ -15,7 +15,7 @@ import DisplayClient from "./components/DisplayClient";
 import RessourcePage from "./components/RessourcePage";
 import MentionsLegales from "./components/LegalNotice";
 import ContactMail from "./components/ContactMail";
-import RessourcePage from "./components/RessourcePage";
+//import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
 import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
