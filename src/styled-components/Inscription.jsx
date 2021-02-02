@@ -16,7 +16,7 @@ export const FlexBox1 = styled.div`
     rgba(35, 134, 201, 1) 0%,
     rgba(18, 34, 57, 1) 100%
   );
-  height: 150vh;
+  height: 182vh;
   @media ${Device.mobile} {
     display: none;
   }
@@ -24,7 +24,6 @@ export const FlexBox1 = styled.div`
 
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 200vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 8vh;
@@ -38,6 +37,16 @@ export const P = styled.h1`
   }
 `;
 
+export const P2 = styled.p`
+  font-size: 1rem;
+  margin-top: 10vh;
+  font-family: "Josefin Sans";
+  @media ${Device.mobile} {
+    margin-left: 2vw;
+    margin-top: 5vh;
+  }
+`;
+
 export const Formulaire = styled.form`
   width: 65vw;
   margin-top: 8vh;
@@ -45,8 +54,6 @@ export const Formulaire = styled.form`
   display: flex;
   font-size: 1.5em;
   flex-direction: column;
-  justify-content: space-between;
-  height: 50vh;
   @media ${Device.mobile} {
     margin-left: 2vw;
   }
@@ -73,6 +80,8 @@ export const DivLabelText = styled.div`
   width: 100%;
   height: 2.7vh;
   @media ${Device.mobile} {
+    margin-bottom: 2vh;
+    margin-top: 8vh;
   }
 `;
 
@@ -92,7 +101,7 @@ export const Label = styled.label`
   color: black;
   margin-bottom: 0.5vw;
   width: 30%;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   @media ${Device.mobile} {
     display: none;
   }
@@ -101,7 +110,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   width: 50%;
   text-align: center;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   @media ${Device.mobile} {
     width: 82vw;
   }
@@ -110,10 +119,45 @@ export const Input = styled.input`
 export const InputSite = styled.input`
   width: 75.6%;
   text-align: center;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   @media ${Device.mobile} {
     width: 82vw;
-    margin-top: 9vh;
+  }
+`;
+
+export const DivLabelCheck = styled.div`
+  font-size: 1rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  margin-bottom: 6vh;
+  margin-top: 4vh;
+  width: 100%;
+  @media ${Device.mobile} {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+`;
+
+export const LabelCheck = styled.label`
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 0.5vw;
+  width: 30%;
+  font-family: "Josefin Sans";
+  @media ${Device.mobile} {
+    width: 50%;
+    margin-bottom: 0;
+    padding-top: 0.5vh;
+  }
+`;
+
+export const InputCheck = styled.input`
+  width: 20%;
+  text-align: center;
+  font-family: "Josefin Sans";
+  @media ${Device.mobile} {
   }
 `;
 
@@ -121,7 +165,7 @@ export const Textarea = styled.textarea`
   width: 77%;
   height: 25vh;
   text-align: center;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   @media ${Device.mobile} {
     width: 86vw;
   }
@@ -131,10 +175,9 @@ export const TextareaEnvies = styled.textarea`
   width: 77%;
   height: 25vh;
   text-align: center;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   @media ${Device.mobile} {
     width: 86vw;
-    margin-top: 11vh;
   }
 `;
 
@@ -151,8 +194,7 @@ export const StyledButton = styled.button`
   outline: none;
   height: 4vh;
   border-radius: 5px;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
+  margin-bottom: 5vh;
   &:hover {
     background: #008bd0;
     color: #d7d0db;

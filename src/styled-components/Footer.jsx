@@ -3,7 +3,7 @@ import { Device } from "../assets/Device/Device";
 
 export const FooterMain = styled.footer`
   list-style: none;
-  background-color: #0d253f;
+  background-color: #122239;
   color: white;
   padding: 0.5%;
 `;
