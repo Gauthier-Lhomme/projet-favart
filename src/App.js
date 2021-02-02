@@ -20,18 +20,16 @@ export default function App() {
   return (
     <div>
       <Reset />
-      <HeaderTop />
+      <HeaderTop token={token} />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/contact" component={ContactMail} />
         <Route path="/clientpage" component={ClientPage} />
-        <Route exact path="/">
-          <Connexion setToken={setToken} />
+        <Route exact path="/connection">
+          <Connection setToken={setToken} />
         </Route>
-
         <Route exact path="/sommaire" component={Sommaire} />
         <Route path="/agissons" component={Agissons} />
-        <Route path="/connexion" component={Connexion} />
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
         <Route path="/inscription" component={Inscription} />
