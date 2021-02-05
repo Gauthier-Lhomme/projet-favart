@@ -2,10 +2,13 @@ import useForm from "./UpdateClient.jsx";
 import { useState, useEffect } from "react";
 
 import ClientProfil from "./ClientProfil";
+import SideBar from "./Sidebar";
 
 import {
+  FlexBox,
   FlexBox2,
   P,
+  FlexBox1,
   Formulaire,
   DivLabel,
   Label,
@@ -20,7 +23,10 @@ import {
 export default function UpdateClient() {
   const { handleChange, values, handleSubmit } = useForm();
   return (
-    <>
+    <FlexBox>
+      <FlexBox1>
+        <SideBar />
+      </FlexBox1>
       <ClientProfil />
       <FlexBox2>
         <P>Modifiez vos informations : </P>
@@ -53,26 +59,6 @@ export default function UpdateClient() {
                 name="phone"
                 placeholder="Numéro de téléphone"
                 value={values.phone}
-                onChange={handleChange}
-              />
-            </DivLabel>
-            <DivLabel>
-              <Label>Mot de passe *</Label>
-              <Input
-                type="password"
-                name="password"
-                placeholder="Mot de passe"
-                value={values.password}
-                onChange={handleChange}
-              />
-            </DivLabel>
-            <DivLabel>
-              <Label>Confirmer le mot de passe *</Label>
-              <Input
-                type="password"
-                name="password2"
-                placeholder="Confirmer le mot de passe"
-                value={values.password2}
                 onChange={handleChange}
               />
             </DivLabel>
@@ -160,6 +146,6 @@ export default function UpdateClient() {
           </fieldset>
         </Formulaire>
       </FlexBox2>
-    </>
+    </FlexBox>
   );
 }

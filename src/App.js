@@ -17,6 +17,7 @@ import ContactMail from "./components/ContactMail";
 
 import UpdateClient from "./components/UpdateClientForm";
 import ClientProfil from "./components/ClientProfil";
+import SideBar from "./components/Sidebar";
 
 import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
@@ -29,6 +30,7 @@ import ConnexionLogin from "./components/ConnexionLogin";
 export default function App() {
   const [token, setToken] = useState("");
   const [idClient, setIdClient] = useState("");
+
   return (
     <div>
       <Reset />
@@ -40,7 +42,12 @@ export default function App() {
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
 
-        <Route path="/inscription" component={Inscription} />
+        <Route exact path="/inscription">
+          <Inscription setToken={setIdClient} />
+        </Route>
+        <Route exact path="/sidebar">
+          <SideBar idClient={idClient} />
+        </Route>
         <Route exact path="/connection">
           <Connexion setToken={setToken} />
         </Route>
