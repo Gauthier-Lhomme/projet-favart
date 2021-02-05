@@ -40,14 +40,10 @@ export default function connexion() {
           </TextRessources>
           <RessourcesImg src={ImgRessources}></RessourcesImg>
         </RessourcesFlex>
-        <Agir>Agissons ensemble</Agir>
+        <Agir to="/updateclient">Votre profil</Agir>
         <AgirFlex>
           <AgirImg src={ImgRessources}></AgirImg>
-          <TextAgir>
-            Lorem ipsum color si damet Lorem ipsum color si dametLorem ipsum
-            color si dametLorem ipsum color si dametLorem ipsum color si
-            dametLorem ipsum color si
-          </TextAgir>
+          <TextAgir>Accédez à votre profil afin de le modifier.</TextAgir>
         </AgirFlex>
         <Flash>Echange flash avec nous</Flash>
         <TextFlash>

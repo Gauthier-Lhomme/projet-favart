@@ -14,14 +14,21 @@ import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
 import MentionsLegales from "./components/LegalNotice";
 import ContactMail from "./components/ContactMail";
+
+import UpdateClient from "./components/UpdateClientForm";
+import ClientProfil from "./components/ClientProfil";
+
 import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
 import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
 import DisplayRessources from "./components/DisplayRessources";
 
+import ConnexionLogin from "./components/ConnexionLogin";
+
 export default function App() {
   const [token, setToken] = useState("");
+  const [idClient, setIdClient] = useState("");
   return (
     <div>
       <Reset />
@@ -39,6 +46,13 @@ export default function App() {
         </Route>
 
         <Route path="/clientpage" component={ClientPage} />
+        <Route exact path="/updateclient">
+          <UpdateClient setId={setIdClient} />
+        </Route>
+        <Route exact path="/clientprofil">
+          <ClientProfil setToken={setToken} />
+        </Route>
+
         <Route exact path="/mentionslegales" component={MentionsLegales} />
         <Route exact path="/contact" component={ContactMail} />
         <Route path="/DisplayClient" component={DisplayClient} />
