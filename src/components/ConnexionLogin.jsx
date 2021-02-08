@@ -20,7 +20,6 @@ export default function useForm({ setToken }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(api);
     api.post("/auth/login", values).then((res) => {
       setToken(res.data.token);
       dispatch({ type: "SET_ID", test: res.data.idClient });
