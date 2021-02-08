@@ -48,6 +48,9 @@ export default function App() {
         <Route exact path="/sidebar">
           <SideBar idClient={idClient} />
         </Route>
+        <Route path="/clientpage" component={ClientPage} />
+        <Route exact path="/mentionslegales" component={MentionsLegales} />
+        <Route exact path="/contact" component={ContactMail} />
         <Route exact path="/connection">
           <Connexion setToken={setToken} />
         </Route>
@@ -69,6 +72,12 @@ export default function App() {
         <Route path="/ressourcesext" component={RessourcePageExt} />
         <Route path="/addressources" component={RessourcesForm} />
         <Route path="/addressourcesext" component={RessourcesFormExt} />
+
+        <Route path="/agissons" component={Agissons} />
+        <Route path="/ilsetelles" component={IlsEtElles} />
+        <Route path="/action" component={Action} />
+        <Route path="/inscription" component={Inscription} />
+        <Route path="/DisplayClient" component={DisplayClient} />
       </Switch>
     </div>
   );

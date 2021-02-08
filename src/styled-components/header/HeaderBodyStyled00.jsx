@@ -6,6 +6,7 @@ export const Page = styled.div`
   background-color: #f2f8fc;
   height: 86vh;
   display: flex;
+  margin-top: 14vh;
   @media ${Device.mobile} {
     padding-bottom: 30vh;
   }
