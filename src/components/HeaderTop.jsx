@@ -25,7 +25,7 @@ export default function HeaderTop({ token }) {
   return (
     <>
       <DivHeaderTop>
-        <LinkLogo to="/sommaire">
+        <LinkLogo to="/">
           <Logo src={logo} alt="logo favart" />
         </LinkLogo>
         <ContainerIcon>
@@ -36,12 +36,13 @@ export default function HeaderTop({ token }) {
             <IconMail src={mail} alt="logo mail" />
           </LinkMail>
           <a href="https://www.linkedin.com/company/favart/">
-            <IconLinkedin src={linkedin} alt="logo linkedin" />{" "}
+            <IconLinkedin src={linkedin} alt="logo linkedin" />
+          </a>
         </ContainerIcon>
 
         <ContainerConnexionSentence>
           {token.length < 1 ? (
-            <ConnexionSentence to="/connexion">
+            <ConnexionSentence to="/connection">
               Connexion / Inscription
             </ConnexionSentence>
           ) : (
@@ -50,7 +51,7 @@ export default function HeaderTop({ token }) {
         </ContainerConnexionSentence>
 
         {token.length < 1 ? (
-          <ContainerIconConnexion to="/connexion">
+          <ContainerIconConnexion to="/connection">
             <IconConnexion src={connect} alt="logo connexion" />
           </ContainerIconConnexion>
         ) : (

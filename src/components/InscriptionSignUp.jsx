@@ -1,9 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 export default function useForm(validateInfo) {
   let history = useHistory();
+
+  const dispatch = useDispatch();
 
   const [values, setValues] = useState({
     username: "",
@@ -35,6 +38,8 @@ export default function useForm(validateInfo) {
     delete values.password2;
     axios.post("http://localhost:3001/auth/signup", values).then((res) => {
       setValues(res.data);
+      dispatch({ type: "SET_ID", test: res.data.idClient });
+      dispatch({ type: "SET_INFOS", test: res.data.infosClients });
       history.push("/clientpage");
     });
   };

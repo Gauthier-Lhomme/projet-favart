@@ -1,5 +1,4 @@
 import useForm from "./InscriptionSignUp.jsx";
-import { useState, useEffect } from "react";
 import validateInfo from "./ValidateInfo";
 import Footer from "./Footer";
 

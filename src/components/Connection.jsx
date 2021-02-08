@@ -1,4 +1,5 @@
 import logoFavart from "../assets/logo-icon-header/FAVART.jpg";
+import useForm from "./ConnexionLogin.jsx";
 
 import {
   Background,
@@ -17,7 +18,8 @@ import {
   SpanLink,
 } from "../styled-components/Connection";
 
-export default function Connection() {
+export default function Connection({ setToken }) {
+  const { handleChange, values, handleSubmit } = useForm({ setToken });
   return (
     <Background>
       <ContainerInscription>
@@ -36,19 +38,25 @@ export default function Connection() {
                 name="email"
                 id="email"
                 placeholder="Email"
+                value={values.email}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
             <DivLabel>
               <Input
-                type="text"
+                type="password"
                 name="password"
                 id="password"
                 placeholder="Mot de passe"
+                value={values.password}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
-            <Button>Confirmer</Button>
+            <Button type="submit" value="Envoyer" onClick={handleSubmit}>
+              Confirmer
+            </Button>
           </Formulaire>
           <H2>
             Pas encore de compte ?
