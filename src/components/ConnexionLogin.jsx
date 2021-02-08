@@ -23,7 +23,12 @@ export default function useForm({ setToken }) {
     axios.post("http://localhost:3001/auth/login", values).then((res) => {
       setToken(res.data.token);
       dispatch({ type: "SET_ID", test: res.data.idClient });
-      history.push("/clientpage");
+      dispatch({ type: "SET_TOKEN", test: res.data.token });
+      if ((res.data.idClient = 1)) {
+        history.push("/pagefavart");
+      } else {
+        history.push("/clientpage");
+      }
     });
   };
 

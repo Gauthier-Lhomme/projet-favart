@@ -40,6 +40,7 @@ export default function useForm(validateInfo) {
       setValues(res.data);
       dispatch({ type: "SET_ID", test: res.data.idClient });
       dispatch({ type: "SET_INFOS", test: res.data.infosClients });
+      dispatch({ type: "SET_INFOS", test: res.data.tokenClient });
       history.push("/clientpage");
     });
   };

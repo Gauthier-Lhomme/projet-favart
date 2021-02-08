@@ -21,7 +21,11 @@ import {
   ConnexionSentence,
 } from "../styled-components/HeaderTopStyled.jsx";
 
+import { useSelector } from "react-redux";
+
 export default function HeaderTop({ token }) {
+  const { tokenClient } = useSelector((state) => state.tokenClientReducer);
+
   return (
     <>
       <DivHeaderTop>
@@ -41,7 +45,7 @@ export default function HeaderTop({ token }) {
         </ContainerIcon>
 
         <ContainerConnexionSentence>
-          {token.length < 1 ? (
+          {tokenClient === "0" ? (
             <ConnexionSentence to="/connection">
               Connexion / Inscription
             </ConnexionSentence>
@@ -49,16 +53,6 @@ export default function HeaderTop({ token }) {
             <ConnexionSentence to="/clientpage"> Mon Profil </ConnexionSentence>
           )}
         </ContainerConnexionSentence>
-
-        {token.length < 1 ? (
-          <ContainerIconConnexion to="/connection">
-            <IconConnexion src={connect} alt="logo connexion" />
-          </ContainerIconConnexion>
-        ) : (
-          <ContainerIconConnexion to="/clientpage">
-            <IconConnexion src={user} alt="logo connexion" />
-          </ContainerIconConnexion>
-        )}
       </DivHeaderTop>
     </>
   );
