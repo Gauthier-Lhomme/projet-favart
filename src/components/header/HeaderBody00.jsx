@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Footer from "../Footer";
 import sommaire from "../../assets/Sommaire/sommaire.jpg";
 

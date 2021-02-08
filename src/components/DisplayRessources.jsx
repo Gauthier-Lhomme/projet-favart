@@ -1,7 +1,7 @@
+import { api } from "../conf";
 import React, { useState, useEffect } from "react";
 import RessourcesExt from "./DisplayRessourcesExt";
 
-import axios from "axios";
 import {
   DivCard,
   FlexBox,
@@ -19,23 +19,17 @@ import {
 
 export default function RessourcePage() {
   const [ressources, setRessources] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [doc, setDoc] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
-    axios({
-      method: "GET",
-      url: `http://localhost:3001/ressources`,
-    }).then((res) => {
+    api.get(`/ressources`).then((res) => {
       setRessources(res.data);
-      setLoading(false);
     });
   }, [ressources]);
 
   const removeDoc = (idRessources_Favart) => {
-    let url = `http://localhost:3001/ressources/${idRessources_Favart}`;
-    axios.delete(url).then((res) => {
+    let url = `/ressources/${idRessources_Favart}`;
+    api.delete(url).then((res) => {
       const del = ressources.filter(
         (ressources) => idRessources_Favart !== ressources.idRessources_Favart
       );

@@ -25,8 +25,6 @@ import RessourcesForm from "./components/UpdateRessourcesForm";
 import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
 import DisplayRessources from "./components/DisplayRessources";
 
-import ConnexionLogin from "./components/ConnexionLogin";
-
 export default function App() {
   const [token, setToken] = useState("");
   const [idClient, setIdClient] = useState("");
