@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Img, Testing, Title, Margin } from "../styled-components/LogoStyle";
+import {Img, ContainerLogoCaroussel, Title, Margin, ContainerCaroussel } from "../styled-components/LogoStyle";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -35,13 +35,13 @@ export default function Logo() {
   }, []);
 
   return (
-    <>
+    <ContainerCaroussel>
       <Title>Nos partenaires :</Title>
       <Margin>
         <Carousel
           swipeable={false}
           draggable={false}
-          showDots={true}
+          showDots={false}
           responsive={responsive}
           ssr={true} 
           infinite={true}
@@ -49,7 +49,7 @@ export default function Logo() {
           autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
-          transitionDuration={4000}
+          transitionDuration={2000}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
           dotListClass="custom-dot-list-style"
@@ -57,13 +57,13 @@ export default function Logo() {
         >
           {logos.map((logo) => {
             return (
-              <Testing>
+              <ContainerLogoCaroussel>
                 <Img src={logo.lien_url} />
-              </Testing>
+              </ContainerLogoCaroussel>
             );
           })}
         </Carousel>
       </Margin>
-    </>
+    </ContainerCaroussel>
   );
 }

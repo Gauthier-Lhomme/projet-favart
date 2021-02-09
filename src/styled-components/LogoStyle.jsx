@@ -1,23 +1,30 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
+
+export const ContainerCaroussel=styled.div`
+  @media ${Device.mobile} {
+    height:30vh;
+    margin-top:5vh;
+  }
+`;
 export const Img = styled.img`
   max-height: 20vh;
   max-width: 100%;
-  padding-left:10vw;
+  padding-left:3.5vw;
   @media ${Device.mobile} {
     margin-left: 60vw;
-    max-height: 25vh;
-    max-width: 60vw;
+    max-height: 20vh;
+    max-width: 45vw;
   }
 `;
 
-export const Testing = styled.div`
+export const ContainerLogoCaroussel = styled.div`
   height: 30vh;
   width: 25vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+   justify-content: space-around;
   text-align: center;
   @media ${Device.mobile} {
     height: 25vh;
