@@ -26,7 +26,7 @@ export const FlexBox1 = styled.div`
 
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 00vh;
+  height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 8vh;
