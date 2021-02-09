@@ -24,7 +24,7 @@ import {
 import { useSelector } from "react-redux";
 
 export default function HeaderTop({ token }) {
-  const { tokenClient } = useSelector((state) => state.tokenClientReducer);
+  const { idClient } = useSelector((state) => state.idClientReducer);
 
   return (
     <>
@@ -45,13 +45,16 @@ export default function HeaderTop({ token }) {
         </ContainerIcon>
 
         <ContainerConnexionSentence>
-          {tokenClient === "0" ? (
+          {idClient === 0 ? (
             <ConnexionSentence to="/connection">
               Connexion / Inscription
             </ConnexionSentence>
+          ) : idClient === 1 ? (
+            <ConnexionSentence to="/pagefavart"> Mon Profil </ConnexionSentence>
           ) : (
             <ConnexionSentence to="/clientpage"> Mon Profil </ConnexionSentence>
           )}
+          ;
         </ContainerConnexionSentence>
       </DivHeaderTop>
     </>

@@ -1,6 +1,8 @@
 import useForm from "./UpdateRessources.jsx";
 
 import {
+  FlexBox1,
+  FlexBox,
   FlexBox2,
   P,
   Formulaire,

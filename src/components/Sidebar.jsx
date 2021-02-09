@@ -9,8 +9,7 @@ import {
 import React, { useState, useEffect } from "react";
 
 import { api } from "../conf";
-import { useSelector } from "react-redux";
-
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Sidebar({ setToken }) {
   const [clients, setClients] = useState([]);
@@ -19,11 +18,10 @@ export default function Sidebar({ setToken }) {
   const dispatch = useDispatch();
 
   const { idClient } = useSelector((state) => state.idClientReducer);
-  const { tokenClient } = useSelector((state) => state.tokenClientReducer);
 
   function handleClick(e) {
     e.preventDefault();
-    dispatch({ type: "SET_TOKEN", test: "0" });
+    dispatch({ type: "UNSET_ID" });
   }
 
   useEffect(() => {

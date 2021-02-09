@@ -22,9 +22,8 @@ export default function useForm({ setToken }) {
     e.preventDefault();
     api.post("/auth/login", values).then((res) => {
       setToken(res.data.token);
-      dispatch({ type: "SET_ID", test: res.data.idClient });
-      dispatch({ type: "SET_TOKEN", test: res.data.token });
-      if ((res.data.idClient = 1)) {
+      dispatch({ type: "SET_ID", setId: res.data.idClient });
+      if (res.data.idClient === 1) {
         history.push("/pagefavart");
       } else {
         history.push("/clientpage");

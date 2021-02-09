@@ -38,9 +38,8 @@ export default function useForm(validateInfo) {
     delete values.password2;
     api.post("/auth/signup", values).then((res) => {
       setValues(res.data);
-      dispatch({ type: "SET_ID", test: res.data.idClient });
-      dispatch({ type: "SET_INFOS", test: res.data.infosClients });
-      dispatch({ type: "SET_INFOS", test: res.data.tokenClient });
+      dispatch({ type: "SET_ID", setId: res.data.idClient });
+      dispatch({ type: "SET_INFOS", setInfos: res.data.infosClients });
       history.push("/clientpage");
     });
   };
