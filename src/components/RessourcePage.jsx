@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import aperçu from "../assets/Documents/placeholder.png";
-import axios from "axios";
+import { api } from "../conf";
 import {
   DivCard,
   FlexBox,
@@ -20,10 +20,7 @@ export default function RessourcePage() {
 
   useEffect(() => {
     setLoading(true);
-    axios({
-      method: "GET",
-      url: `http://localhost:3001/ressources`,
-    }).then((res) => {
+    api.get(`/ressources`).then((res) => {
       setRessources(res.data);
       setLoading(false);
     });

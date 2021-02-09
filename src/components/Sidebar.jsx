@@ -8,7 +8,7 @@ import {
 } from "../styled-components/Sidebar";
 import React, { useState, useEffect } from "react";
 import { api } from "../conf";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Sidebar({ setToken }) {
   const [clients, setClients] = useState([]);

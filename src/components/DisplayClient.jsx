@@ -15,6 +15,8 @@ import {
   CardBdd,
 } from "../styled-components/DisplayClient";
 
+import SideBar from "./Sidebar";
+
 import Footer from "./Footer";
 
 export default () => {
@@ -36,11 +38,7 @@ export default () => {
     <>
       <FlexBox>
         <FlexBox1>
-          <Text>
-            <Name>Name</Name>
-            <Job>Function</Job>
-            <Company>Company</Company>
-          </Text>
+          <SideBar />
         </FlexBox1>
         <FlexBox2>
           <div>
