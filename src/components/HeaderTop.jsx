@@ -39,7 +39,7 @@ export default function HeaderTop({ token }) {
           <IconLinkedin src={linkedin} alt="logo linkedin" />
         </ContainerIcon>
 
-          <ContainerConnexionSentence>
+        <ContainerConnexionSentence>
           {token.length < 1 ? (
             <ConnexionSentence to="/connexion">
               Connexion / Inscription

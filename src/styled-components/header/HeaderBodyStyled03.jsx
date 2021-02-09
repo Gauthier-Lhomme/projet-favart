@@ -29,8 +29,8 @@ export const Title = styled.h1`
   font-family: "Josefin Sans";
   @media ${Device.mobile} {
     font-size: 2.5rem;
-    margin-top:4vh;
-    margin-bottom:4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
 `;
 

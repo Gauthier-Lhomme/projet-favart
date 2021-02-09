@@ -2,8 +2,8 @@ import { Device } from "../assets/Device/Device";
 import styled from "styled-components";
 
 export const Page = styled.div`
-  background-color:#F2F8FC;
-    `;
+  background-color: #f2f8fc;
+`;
 
 export const FirstTitle = styled.p`
   margin: 11.5vh 7vw 14vh 7vw;
@@ -34,7 +34,7 @@ export const PictureContent = styled.div`
 `;
 
 export const Picture = styled.img`
-background-color:white;
+  background-color: white;
   height: 25vh;
   width: auto;
   @media ${Device.mobile} {
@@ -120,7 +120,7 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
-background-color:white;
+  background-color: white;
   max-height: 15vh;
   max-width: 18vw;
   @media ${Device.mobile} {
@@ -128,5 +128,3 @@ background-color:white;
     max-width: 25vw;
   }
 `;
-
-

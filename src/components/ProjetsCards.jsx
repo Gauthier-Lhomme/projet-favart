@@ -5,7 +5,7 @@ import {
   FirstTitle,
   PictureContent,
   Picture,
-ContainerMapProjets,
+  ContainerMapProjets,
   Button,
   Image,
   Container,
@@ -29,53 +29,53 @@ export default function ProjetsCards() {
 
   return (
     <>
-    <Page>
+      <Page>
         <FirstTitle>
           S’autoriser le droit à l’expérimentation territoriale avec les acteurs
           engagés
         </FirstTitle>
-      <ContainerMapProjets>
-        {projets.map((projet) => (
-          <div key={projet.id}>
-            <Button
-              onClick={() =>
-                setDisplay({ isDisplay: !isDisplay.isDisplay, id: projet.id })
-              }
-            >
-              <Image src={projet.logo} />
-            </Button>
-            <PictureContent
-              onClick={() => projet.id}
-              className={
-                isDisplay.isDisplay === true && isDisplay.id === projet.id
-                  ? ""
-                  : "hide"
-              }
-            >
-              <Container>
-                <LogoTitle>
-                  <Picture src={projet.logo} />
-                  <h1>{projet.titre}</h1>
-                </LogoTitle>
-                <Content>
-                  <H3>Porteur du projet :</H3>
-                  <p>{projet.porteurs}</p>
-                  <H3>Les partenaires :</H3>
-                  <p>{projet.partenaires}</p>
-                  <H3>Territoires :</H3>
-                  <p>{projet.territoires}</p>
-                  <H3>Enjeux :</H3>
-                  <p>{projet.enjeux}</p>
-                  <H3>Mission Favart :</H3>
-                  <p>{projet.missions}</p>
-                  <H3>Outils Favart :</H3>
-                  <p>{projet.outils}</p>
-                </Content>
-              </Container>
-            </PictureContent>
-          </div>
-        ))}
-      </ContainerMapProjets>
+        <ContainerMapProjets>
+          {projets.map((projet) => (
+            <div key={projet.id}>
+              <Button
+                onClick={() =>
+                  setDisplay({ isDisplay: !isDisplay.isDisplay, id: projet.id })
+                }
+              >
+                <Image src={projet.logo} />
+              </Button>
+              <PictureContent
+                onClick={() => projet.id}
+                className={
+                  isDisplay.isDisplay === true && isDisplay.id === projet.id
+                    ? ""
+                    : "hide"
+                }
+              >
+                <Container>
+                  <LogoTitle>
+                    <Picture src={projet.logo} />
+                    <h1>{projet.titre}</h1>
+                  </LogoTitle>
+                  <Content>
+                    <H3>Porteur du projet :</H3>
+                    <p>{projet.porteurs}</p>
+                    <H3>Les partenaires :</H3>
+                    <p>{projet.partenaires}</p>
+                    <H3>Territoires :</H3>
+                    <p>{projet.territoires}</p>
+                    <H3>Enjeux :</H3>
+                    <p>{projet.enjeux}</p>
+                    <H3>Mission Favart :</H3>
+                    <p>{projet.missions}</p>
+                    <H3>Outils Favart :</H3>
+                    <p>{projet.outils}</p>
+                  </Content>
+                </Container>
+              </PictureContent>
+            </div>
+          ))}
+        </ContainerMapProjets>
       </Page>
     </>
   );
