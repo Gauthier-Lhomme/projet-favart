@@ -7,9 +7,8 @@ import {
   Link1,
 } from "../styled-components/Sidebar";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { api } from "../conf";
+import { useSelector } from "react-redux";
 
 export default function Sidebar({ setToken }) {
   const [clients, setClients] = useState([]);
@@ -27,7 +26,7 @@ export default function Sidebar({ setToken }) {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:3001/client/${idClient}`).then((res) => {
+    api.get(`/client/${idClient}`).then((res) => {
       setClients(res.data[0]);
       setLoading(false);
     });

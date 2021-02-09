@@ -1,5 +1,4 @@
 import useForm from "./UpdateClient.jsx";
-import { useState, useEffect } from "react";
 
 import ClientProfil from "./ClientProfil";
 import Footer from "./Footer";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import { api } from "../conf";
 
 export default function useForm() {
   const [values, setValues] = useState({
@@ -15,7 +15,7 @@ export default function useForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:3001/ressources`, values).then((res) => {
+    api.post(`/ressources`, values).then((res) => {
       setValues(res.data);
     });
   };

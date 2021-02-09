@@ -1,6 +1,4 @@
 import React from "react";
-import HeaderMenu01 from "./header/HeaderMenu01";
-import HeaderBody01 from "./header/HeaderBody01";
 import woods from "../assets/images/woods.jfif";
 import docteur from "../assets/images/docteur.jfif";
 import {
