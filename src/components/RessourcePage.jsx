@@ -9,13 +9,10 @@ import {
   H1,
   P,
   Img,
-  Text,
-  Name,
-  Job,
-  Company,
 } from "../styled-components/RessourcePage";
 
-import documents from "../assets/Documents/Ressource";
+import SideBar from "./Sidebar";
+import Footer from "./Footer";
 
 export default function RessourcePage() {
   const [ressources, setRessources] = useState([]);
@@ -33,25 +30,24 @@ export default function RessourcePage() {
   }, [setRessources]);
 
   return (
-    <FlexBox>
-      <FlexBox1>
-        <Text>
-          <Name>Surname</Name>
-          <Job>Function</Job>
-          <Company>Company</Company>
-        </Text>
-      </FlexBox1>
-      <FlexBox2>
-        {ressources.map((doc, i) => (
-          <DivCard key={i}>
-            <a href={doc.link}>
-              <Img src={aperçu} alt="" />
-            </a>
-            <H1>{doc.title}</H1>
-            <P>{doc.description}</P>
-          </DivCard>
-        ))}
-      </FlexBox2>
-    </FlexBox>
+    <>
+      <FlexBox>
+        <FlexBox1>
+          <SideBar />
+        </FlexBox1>
+        <FlexBox2>
+          {ressources.map((doc, i) => (
+            <DivCard key={i}>
+              <a href={doc.link}>
+                <Img src={aperçu} alt="" />
+              </a>
+              <H1>{doc.title}</H1>
+              <P>{doc.description}</P>
+            </DivCard>
+          ))}
+        </FlexBox2>
+      </FlexBox>
+      <Footer />
+    </>
   );
 }

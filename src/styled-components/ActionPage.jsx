@@ -3,8 +3,8 @@ import { Device } from "../assets/Device/Device";
 
 export const DivMain = styled.div`
   padding-top: 10vh;
-  background-color: #e5e5e5;
-  font-family: "Noto Sans CJK JP";
+  background-color: #f2f8fc;
+  font-family: "Josefin Sans";
 `;
 
 //Informations cards
@@ -93,6 +93,7 @@ export const Button = styled.button`
   font-size: 2rem;
   margin-top: 8.9vh;
   padding: 2vh;
+  width: 18vw;
   cursor: pointer;
   &:hover {
     color: grey;
@@ -111,10 +112,10 @@ export const ButtonCardMiddle = styled.div`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-left: 15vh;
+  margin-left: 11vh;
   margin-bottom: 3.2vh;
   padding: 2vh;
-  width: 43%;
+  width: 17vw;
   cursor: pointer;
   font-family: "Noto Sans CJK JP";
   &:hover {
@@ -133,8 +134,30 @@ export const ButtonFlash = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 9vh;
+  margin-top: 16vh;
   padding: 2vh;
+  width: 21vw;
+  cursor: pointer;
+  &:hover {
+    color: grey;
+    transition-duration: 500ms;
+  }
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
+`;
+
+export const ButtonEnd = styled.button`
+  background-color: #122239;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0vh;
+  margin-bottom: 6vh;
+  padding: 2vh;
+  width: 21vw;
   cursor: pointer;
   &:hover {
     color: grey;
@@ -146,9 +169,9 @@ export const ButtonFlash = styled.button`
 `;
 
 export const DivCenter = styled.div`
-  padding-top: 8vh;
   display: flex;
   justify-content: center;
+  margin-left: 0.1vw;
   align-items: center;
   @media ${Device.mobile} {
     padding-top: 0vh;
@@ -169,14 +192,18 @@ export const P = styled.p`
 `;
 
 export const H1 = styled.h1`
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+  font-family: "Josefin Sans";
   font-weight: bold;
   color: #122239;
-  font-size: 4rem;
-  padding-bottom: 6vh;
-  margin-left: 4vw;
-  margin-top: 8vh;
   @media ${Device.mobile} {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-bottom: 0;
   }
 `;
 

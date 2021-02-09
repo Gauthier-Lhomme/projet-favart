@@ -17,7 +17,7 @@ export const FlexBox1 = styled.div`
     rgba(35, 134, 201, 1) 0%,
     rgba(18, 34, 57, 1) 100%
   );
-  height: 150vh;
+  height: 100vh;
   @media ${Device.mobile} {
     display: column;
     width: 100%;

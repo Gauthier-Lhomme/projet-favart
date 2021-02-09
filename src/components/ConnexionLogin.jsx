@@ -24,7 +24,7 @@ export default function useForm({ setToken }) {
       setToken(res.data.token);
       dispatch({ type: "SET_ID", test: res.data.idClient });
       dispatch({ type: "SET_TOKEN", test: res.data.token });
-      if ((res.data.idClient = 1)) {
+      if (res.data.idClient === 1) {
         history.push("/pagefavart");
       } else {
         history.push("/clientpage");

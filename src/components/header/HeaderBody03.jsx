@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main"; //We'll have to change to "ils et elles" page
+import Main from "../Main";
 import Footer from "../Footer";
 
 import {

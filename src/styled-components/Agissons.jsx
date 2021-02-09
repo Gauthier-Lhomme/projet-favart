@@ -3,6 +3,10 @@ import { Device } from "../assets/Device/Device";
 
 export const Background = styled.div`
   background-color: #f2f8fc;
+  height: 210vh;
+  @media ${Device.mobile} {
+    height: 380vh;
+  }
 `;
 
 export const P = styled.p`
@@ -12,6 +16,7 @@ export const P = styled.p`
   margin-bottom: 6vh;
   font-family: "Josefin Sans";
   font-weight: bold;
+  color: #122239;
   @media ${Device.mobile} {
     font-size: 1.5rem;
     margin-right: 4vw;

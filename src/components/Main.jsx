@@ -23,6 +23,8 @@ import {
   ListliWhom,
   FSentence,
   FPagraph,
+  Legend,
+  ContainerImg,
 } from "../styled-components/MainStyle";
 
 export default function MainPage() {
@@ -86,7 +88,8 @@ export default function MainPage() {
         domine le système humain qui lui-même domine l’écosystème naturel, à une
         approche holistique dans laquelle le capital naturel nourrit le capital
         humain qui guide le capital financier.
-        <br></br>
+        <br />
+        <br />
         Notre ambition est d’expérimenter et de développer des solutions de
         rupture favorisant le passage :
         <List>
@@ -138,11 +141,15 @@ export default function MainPage() {
             </ListliWhom>
           </List>
         </PWhom>
-
-        <ImgWhom
-          src={docteur}
-          alt="Jonas Salk, inventeur du vaccin contre la polio"
-        />
+        <ContainerImg>
+          <ImgWhom
+            src={docteur}
+            alt="Jonas Salk, inventeur du vaccin contre la polio"
+          />
+          <Legend>
+            Jonas Salk, inventeur du vaccin contre la poliomyélite
+          </Legend>
+        </ContainerImg>
       </ContainerWhom>
       <SubTitle>
         "Changer la vie des personnes les plus fragiles. Annihiler les
