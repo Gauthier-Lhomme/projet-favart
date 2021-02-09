@@ -14,14 +14,23 @@ import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
 import MentionsLegales from "./components/LegalNotice";
 import ContactMail from "./components/ContactMail";
+
+import UpdateClient from "./components/UpdateClientForm";
+import ClientProfil from "./components/ClientProfil";
+import SideBar from "./components/Sidebar";
+
 import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
 import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
 import DisplayRessources from "./components/DisplayRessources";
 
+import ConnexionLogin from "./components/ConnexionLogin";
+
 export default function App() {
   const [token, setToken] = useState("");
+  const [idClient, setIdClient] = useState("");
+
   return (
     <div>
       <Reset />
@@ -33,15 +42,30 @@ export default function App() {
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
 
+        <Route exact path="/inscription">
+          <Inscription setToken={setIdClient} />
+        </Route>
+        <Route exact path="/sidebar">
+          <SideBar idClient={idClient} />
+        </Route>
+        <Route path="/clientpage" component={ClientPage} />
+        <Route exact path="/mentionslegales" component={MentionsLegales} />
+        <Route exact path="/contact" component={ContactMail} />
+        <Route exact path="/connection">
+          <Connexion setToken={setToken} />
+        </Route>
+
+        <Route path="/clientpage" component={ClientPage} />
+        <Route exact path="/updateclient">
+          <UpdateClient setId={setIdClient} />
+        </Route>
+        <Route exact path="/clientprofil">
+          <ClientProfil setToken={setToken} />
+        </Route>
+
         <Route exact path="/mentionslegales" component={MentionsLegales} />
         <Route exact path="/contact" component={ContactMail} />
 
-        <Route exact path="/connexion">
-          <Connexion setToken={setToken} />
-        </Route>
-        <Route path="/inscription" component={Inscription} />
-
-        <Route path="/clientpage" component={ClientPage} />
         <Route path="/DisplayClient" component={DisplayClient} />
 
         <Route path="/ressources" component={RessourcePage} />
@@ -49,6 +73,13 @@ export default function App() {
         <Route path="/ressourcesext" component={RessourcePageExt} />
         <Route path="/addressources" component={RessourcesForm} />
         <Route path="/addressourcesext" component={RessourcesFormExt} />
+
+        <Route path="/agissons" component={Agissons} />
+        <Route path="/ilsetelles" component={IlsEtElles} />
+        <Route path="/action" component={Action} />
+        <Route path="/inscription" component={Inscription} />
+        <Route path="/DisplayClient" component={DisplayClient} />
+
       </Switch>
     </div>
   );

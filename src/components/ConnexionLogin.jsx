@@ -1,8 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 export default function useForm({ setToken }) {
+  const dispatch = useDispatch();
+
   let history = useHistory();
 
   const [values, setValues] = useState({
@@ -18,7 +21,8 @@ export default function useForm({ setToken }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post("http://localhost:3001/auth/login", values).then((res) => {
-      setToken(res.data);
+      setToken(res.data.token);
+      dispatch({ type: "SET_ID", test: res.data.idClient });
       history.push("/clientpage");
     });
   };

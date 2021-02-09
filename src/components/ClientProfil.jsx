@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import axios from "axios";
-import UpdateClient from "./UpdateClientForm.jsx";
 
 import {
   FlexBox,
@@ -14,36 +14,31 @@ import {
   FlexText,
   CardText,
   CardBdd,
-} from "../styled-components/ProfilPage.jsx";
-import ContactUs from "./ContactUs.jsx";
-import UpdateClient from "./UpdateClientForm.jsx";
+} from "../styled-components/ClientProfil";
 
 export default () => {
   const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const { idClient } = useSelector((state) => state.idClientReducer);
+
   useEffect(() => {
     setLoading(true);
-    axios.get("http://localhost:3001/client/9").then((res) => {
+    axios({
+      method: "GET",
+      url: `http://localhost:3001/client/${idClient}`,
+    }).then((res) => {
       setClients(res.data[0]);
       setLoading(false);
     });
-  }, []);
+  }, [setClients]);
 
   return (
     <FlexBox>
-      <FlexBox1>
-        <Text>
-          <Name>Name</Name>
-          <Job>Function</Job>
-          <Company>Company</Company>
-        </Text>
-      </FlexBox1>
       <FlexBox2>
         <div>
-          {loading ? (
-            <p>it's loading</p>
-          ) : (
+          {loading && <p>it's loading</p>}
+          {!loading && (
             <>
               <Card>
                 <FlexText>
@@ -97,10 +92,6 @@ export default () => {
               </Card>
             </>
           )}
-        </div>
-        <div>
-          <UpdateClient clients={clients} />
-          <ContactUs />
         </div>
       </FlexBox2>
     </FlexBox>
