@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export const FlexBox = styled.div`
   display: flex;
+  height: 117vh;
   @media ${Device.mobile} {
     flex-direction: column;
   }
@@ -47,6 +48,9 @@ export const RessourcesFlex = styled.div`
   justify-content: space-around;
   align-items: center;
   margin-bottom: 4vh;
+  @media ${Device.mobile} {
+   margin-right : 6vw;
+  }
 `;
 
 export const RessourcesExt = styled(Link)`
@@ -55,6 +59,7 @@ export const RessourcesExt = styled(Link)`
 
 export const RessourcesFav = styled(Link)`
   width: 40%;
+
 `;
 
 export const ButtonFavart = styled.button`
@@ -74,6 +79,11 @@ export const ButtonFavart = styled.button`
     background: #cdcdcd;
     color: #0d1842;
   }
+  @media ${Device.mobile} {
+    width : 18vh;
+    font-size: 1rem;
+
+  }
 `;
 
 export const ButtonExt = styled.button`
@@ -92,6 +102,11 @@ export const ButtonExt = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width : 18vh;
+    font-size: 1rem;
+
   }
 `;
 

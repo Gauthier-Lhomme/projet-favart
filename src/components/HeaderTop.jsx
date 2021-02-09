@@ -53,6 +53,16 @@ export default function HeaderTop({ token }) {
             <ConnexionSentence to="/clientpage"> Mon Profil </ConnexionSentence>
           )}
         </ContainerConnexionSentence>
+
+        {tokenClient === "0" ? (
+          <ContainerIconConnexion to="/connection">
+            <IconConnexion src={connect} alt="logo connexion" />
+          </ContainerIconConnexion>
+        ) : (
+          <ContainerIconConnexion to="/clientpage">
+            <IconConnexion src={user} alt="logo connexion" />
+          </ContainerIconConnexion>
+        )}
       </DivHeaderTop>
     </>
   );

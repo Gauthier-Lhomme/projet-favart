@@ -88,6 +88,9 @@ export const ImgWhy = styled.img`
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
+  @media ${Device.mobile} {
+    display: none;
+  }
 `;
 
 export const H2Title = styled.h2`
@@ -148,6 +151,11 @@ export const ImgWhom = styled.img`
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
+  @media ${Device.mobile} {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const Legend = styled.p`
@@ -202,7 +210,7 @@ export const Listli = styled.li`
   list-style-position: inside;
   padding-bottom: 1vh;
   @media ${Device.mobile} {
-    padding: 2vh;
+    text-align: start;
   }
 `;
 
@@ -210,4 +218,7 @@ export const ListliWhom = styled.li`
   list-style-type: disc;
   padding-bottom: 1vh;
   list-style-position: inside;
+  @media ${Device.mobile} {
+    text-align: start;
+  }
 `;

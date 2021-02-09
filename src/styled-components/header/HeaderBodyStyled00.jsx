@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Page = styled.div`
   background-color: #f2f8fc;
-  height: 86vh;
+  height: 60vh;
   display: flex;
   margin-top: 14vh;
   @media ${Device.mobile} {

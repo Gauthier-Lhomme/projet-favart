@@ -51,9 +51,9 @@ export default function App() {
           <SideBar setToken={setToken} />
         </Route>
         <Route path="/clientpage" component={ClientPage} />
-        <Route exact path="/mentionslegales" component={MentionsLegales} />
-        <Route exact path="/contact" component={ContactMail} />
-        <Route exact path="/connection">
+        <Route path="/mentionslegales" component={MentionsLegales} />
+        <Route path="/contact" component={ContactMail} />
+        <Route path="/connection">
           <Connexion setToken={setToken} />
         </Route>
 

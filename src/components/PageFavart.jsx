@@ -24,10 +24,10 @@ export default function PageFavart() {
             <Button1>Accéder à la base de données client</Button1>
           </Link1>
           <Link1 to="/addressources">
-            <Button2>Accéder aux ressources Favart</Button2>
+            <Button2>Ajouter des ressources Favart</Button2>
           </Link1>
           <Link1 to="/addressourcesext">
-            <Button3>Accéder aux ressources externes</Button3>
+            <Button3>Ajouter des ressources externes</Button3>
           </Link1>
           <Link1>
             <Button4>Administrer le site</Button4>

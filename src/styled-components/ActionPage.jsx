@@ -28,8 +28,8 @@ export const DivCards = styled.div`
   color: white;
   @media ${Device.mobile} {
     width: 80%;
+    height: 45vh;
     margin-bottom: 6vh;
-    padding-bottom: 3vh;
     padding-top: 3vh;
   }
 `;
@@ -101,6 +101,8 @@ export const Button = styled.button`
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 3vh;
+    width: 50vw;
   }
 `;
 
@@ -124,6 +126,9 @@ export const ButtonCardMiddle = styled.div`
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 3vh;
+    width: 50vw;
+    margin-left: 12vw;
   }
 `;
 
@@ -144,6 +149,8 @@ export const ButtonFlash = styled.button`
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 8vh;
+    width: 50vw;
   }
 `;
 
@@ -165,6 +172,8 @@ export const ButtonEnd = styled.button`
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 3vh;
+    width: 50vw;
   }
 `;
 
@@ -203,7 +212,7 @@ export const H1 = styled.h1`
     font-size: 1.5rem;
     margin-right: 4vw;
     margin-left: 4vw;
-    margin-bottom: 0;
+    margin-bottom: 4vh;
   }
 `;
 

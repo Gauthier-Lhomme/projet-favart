@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const FlexBox = styled.div`
   display: flex;
-  height: 100vh;
+  height: 150vh;
   @media ${Device.mobile} {
     flex-direction: column;
   }
@@ -24,12 +24,18 @@ export const FlexBox1 = styled.div`
     height: 5vh;
   }
 `;
+
 export const FlexBox2 = styled.div`
   flex: 2;
   height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 25vh;
+  @media ${Device.mobile} {
+    padding-top: 10vh;
+    padding-left: 4vw;
+
+  }
 `;
 
 export const Button1 = styled.button`
@@ -48,6 +54,10 @@ export const Button1 = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
   }
 `;
 
@@ -68,6 +78,10 @@ export const Button2 = styled.button`
     background: #cdcdcd;
     color: #0d1842;
   }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
+  }
 `;
 
 export const Button3 = styled.button`
@@ -87,6 +101,10 @@ export const Button3 = styled.button`
     background: #cdcdcd;
     color: #0d1842;
   }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
+  }
 `;
 
 export const Button4 = styled.button`
@@ -105,6 +123,10 @@ export const Button4 = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
   }
 `;
 

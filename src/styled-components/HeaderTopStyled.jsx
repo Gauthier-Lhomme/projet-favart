@@ -12,7 +12,7 @@ export const DivHeaderTop = styled.div`
   top: 0;
   width: 100%;
   @media ${Device.mobile} {
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 10vh;
   }
 `;
@@ -24,9 +24,7 @@ export const Logo = styled.img`
   width: 15vw;
   @media ${Device.mobile} {
     height: 10vh;
-    width: 40vw;
-    margin-right: 20vw;
-    margin-left: 25vw;
+    width: 70vw;
   }
 `;
 export const ContainerIcon = styled.div`
@@ -63,6 +61,7 @@ export const ContainerIconConnexion = styled(Link)`
 export const IconConnexion = styled.img`
   @media ${Device.mobile} {
     width: 3vh;
+    margin-right: 5vw;
   }
 `;
 

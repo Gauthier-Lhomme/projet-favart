@@ -36,6 +36,8 @@ export const Company = styled.h2`
 
 export const Info = styled.div`
   padding-top: 40vh;
+  height: 150vh;
+
 `;
 
 export const Button = styled.button`

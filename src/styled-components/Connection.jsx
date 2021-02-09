@@ -10,7 +10,7 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
   @media ${Device.mobile} {
-    height: 85vh;
+    height: 100vh;
     width: 100vw;
   }
 `;
@@ -29,6 +29,7 @@ export const ContainerInscription = styled.div`
   @media ${Device.mobile} {
     flex-direction: column;
     height: 60vh;
+    margin-top: 15vh;
   }
 `;
 

@@ -10,6 +10,7 @@ import {
   Label,
   Input,
   StyledButton,
+  InputDescription
 } from "../styled-components/UpdateRessourcesForm";
 
 import SideBar from "./Sidebar";
@@ -51,7 +52,7 @@ export default function Inscription() {
               </DivLabel>
               <DivLabel>
                 <Label>Description *</Label>
-                <Input
+                <InputDescription
                   type="text"
                   name="description"
                   placeholder="Description"

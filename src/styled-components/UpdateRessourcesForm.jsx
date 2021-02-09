@@ -3,7 +3,7 @@ import { Device } from "../assets/Device/Device";
 
 export const FlexBox = styled.div`
   display: flex;
-  height: 100vh;
+  height: 117vh;
   @media ${Device.mobile} {
     flex-direction: column;
   }
@@ -20,16 +20,17 @@ export const FlexBox1 = styled.div`
   height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
-    height: 5vh;
   }
 `;
 
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 8vh;
+  @media ${Device.mobile} {
+    padding-top: 0vh;
+  }
 `;
 
 export const P = styled.h1`
@@ -38,6 +39,7 @@ export const P = styled.h1`
   margin-top: 20vh;
   @media ${Device.mobile} {
     margin-left: 2vw;
+    margin-top: 6vh;
   }
 `;
 
@@ -63,6 +65,16 @@ export const DivLabel = styled.div`
   width: 100%;
   height: 2.7vh;
   @media ${Device.mobile} {
+  }
+`;
+
+export const InputDescription = styled.textarea`
+  width: 50%;
+  text-align: center;
+  font-family: "Noto Sans CJK JP";
+  @media ${Device.mobile} {
+    width: 86vw;
+    resize: none;
   }
 `;
 
@@ -162,7 +174,7 @@ export const StyledButton = styled.button`
     cursor: pointer;
   }
   @media ${Device.mobile} {
-    margin-left: 27vw;
+    margin-left: 25vw;
     margin-bottom: 4vh;
     height: 9vw;
   }
