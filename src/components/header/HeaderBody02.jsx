@@ -11,7 +11,6 @@ import {
   BlockSentence,
   ContainerAuthorSentence,
   AuthorSentence,
-  BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
 } from "../../styled-components/header/HeaderBodyStyled02.jsx";

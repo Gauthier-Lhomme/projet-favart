@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import { api } from "../conf";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
@@ -36,7 +36,7 @@ export default function useForm(validateInfo) {
     e.preventDefault();
     setErrors(validateInfo(values));
     delete values.password2;
-    axios.post("http://localhost:3001/auth/signup", values).then((res) => {
+    api.post("/auth/signup", values).then((res) => {
       setValues(res.data);
       dispatch({ type: "SET_ID", test: res.data.idClient });
       dispatch({ type: "SET_INFOS", test: res.data.infosClients });
