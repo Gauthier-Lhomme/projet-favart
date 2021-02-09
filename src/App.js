@@ -12,7 +12,6 @@ import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
-import RessourcePage from "./components/RessourcePage";
 import MentionsLegales from "./components/LegalNotice";
 import ContactMail from "./components/ContactMail";
 import RessourcePage from "./components/RessourcePage";

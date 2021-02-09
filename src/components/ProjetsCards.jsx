@@ -5,7 +5,7 @@ import {
   FirstTitle,
   PictureContent,
   Picture,
-  Flex,
+ContainerMapProjets,
   Button,
   Image,
   Container,
@@ -34,7 +34,7 @@ export default function ProjetsCards() {
           S’autoriser le droit à l’expérimentation territoriale avec les acteurs
           engagés
         </FirstTitle>
-      <Flex>
+      <ContainerMapProjets>
         {projets.map((projet) => (
           <div key={projet.id}>
             <Button
@@ -75,7 +75,7 @@ export default function ProjetsCards() {
             </PictureContent>
           </div>
         ))}
-      </Flex>
+      </ContainerMapProjets>
       </Page>
     </>
   );

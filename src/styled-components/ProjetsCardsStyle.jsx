@@ -53,7 +53,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Flex = styled.div`
+export const ContainerMapProjets = styled.div`
   display: flex;
   overflow: hidden;
   flex-direction: column;
