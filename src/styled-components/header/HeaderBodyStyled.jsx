@@ -2,14 +2,9 @@ import styled from "styled-components";
 import { Device } from "../../assets/Device/Device.jsx";
 
 export const Page = styled.div`
-<<<<<<< HEAD
-  background-color: #e5e5e5;
-  height: 92vh;
-=======
   background-color: #f2f8fc;
   height: 86vh;
   margin-top: 14vh;
->>>>>>> 5f67c05e980422a295eb0432b70d6f0f27e4ae01
 `;
 
 export const BlockTitle = styled.div`

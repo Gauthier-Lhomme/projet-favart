@@ -15,13 +15,11 @@ import DisplayClient from "./components/DisplayClient";
 import RessourcePage from "./components/RessourcePage";
 import MentionsLegales from "./components/LegalNotice";
 import ContactMail from "./components/ContactMail";
-//import RessourcePage from "./components/RessourcePage";
+import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
 import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
 import DisplayRessources from "./components/DisplayRessources";
-
-
 
 export default function App() {
   const [token, setToken] = useState("");
@@ -37,15 +35,15 @@ export default function App() {
         <Route path="/action" component={Action} />
 
         <Route exact path="/mentionslegales" component={MentionsLegales} />
-        <Route exact path="/contact" component={ContactMail} /> 
+        <Route exact path="/contact" component={ContactMail} />
 
         <Route exact path="/connexion">
           <Connexion setToken={setToken} />
         </Route>
         <Route path="/inscription" component={Inscription} />
 
-       <Route path="/clientpage" component={ClientPage} />
-       <Route path="/DisplayClient" component={DisplayClient} />
+        <Route path="/clientpage" component={ClientPage} />
+        <Route path="/DisplayClient" component={DisplayClient} />
 
         <Route path="/ressources" component={RessourcePage} />
         <Route path="/displayressources" component={DisplayRessources} />
