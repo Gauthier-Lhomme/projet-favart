@@ -3,8 +3,8 @@ import { Device } from "../assets/Device/Device";
 
 export const DivMain = styled.div`
   padding-top: 10vh;
-  background-color: #e5e5e5;
-  font-family: "Noto Sans CJK JP";
+  background-color: #f2f8fc;
+  font-family: "JosefinSans-SemiBold";
 `;
 
 //Informations cards
@@ -28,8 +28,8 @@ export const DivCards = styled.div`
   color: white;
   @media ${Device.mobile} {
     width: 80%;
+    height: 45vh;
     margin-bottom: 6vh;
-    padding-bottom: 3vh;
     padding-top: 3vh;
   }
 `;
@@ -91,8 +91,9 @@ export const Button = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 8.9vh;
+  margin-top: 17vh;
   padding: 2vh;
+  width: 18vw;
   cursor: pointer;
   &:hover {
     color: grey;
@@ -100,6 +101,8 @@ export const Button = styled.button`
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 3vh;
+    width: 50vw;
   }
 `;
 
@@ -111,18 +114,21 @@ export const ButtonCardMiddle = styled.div`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-left: 15vh;
+  margin-left: 11vh;
   margin-bottom: 3.2vh;
   padding: 2vh;
-  width: 43%;
+  width: 17vw;
   cursor: pointer;
-  font-family: "Noto Sans CJK JP";
+  font-family: "JosefinSans-SemiBold";
   &:hover {
     color: grey;
     transition-duration: 500ms;
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 3vh;
+    width: 50vw;
+    margin-left: 12vw;
   }
 `;
 
@@ -133,8 +139,9 @@ export const ButtonFlash = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 9vh;
+  margin-top: 24vh;
   padding: 2vh;
+  width: 21vw;
   cursor: pointer;
   &:hover {
     color: grey;
@@ -142,13 +149,41 @@ export const ButtonFlash = styled.button`
   }
   @media ${Device.mobile} {
     font-size: 1rem;
+    margin-top: 8vh;
+    width: 50vw;
+  }
+  @media ${Device.retro} {
+    margin-top: 20vh;
+  }
+`;
+
+export const ButtonEnd = styled.button`
+  background-color: #122239;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0vh;
+  margin-bottom: 6vh;
+  padding: 2vh;
+  width: 21vw;
+  cursor: pointer;
+  &:hover {
+    color: grey;
+    transition-duration: 500ms;
+  }
+  @media ${Device.mobile} {
+    font-size: 1rem;
+    margin-top: 3vh;
+    width: 50vw;
   }
 `;
 
 export const DivCenter = styled.div`
-  padding-top: 8vh;
   display: flex;
   justify-content: center;
+  margin-left: 0.1vw;
   align-items: center;
   @media ${Device.mobile} {
     padding-top: 0vh;
@@ -169,14 +204,18 @@ export const P = styled.p`
 `;
 
 export const H1 = styled.h1`
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+  font-family: "JosefinSans-SemiBold";
   font-weight: bold;
   color: #122239;
-  font-size: 4rem;
-  padding-bottom: 6vh;
-  margin-left: 4vw;
-  margin-top: 8vh;
   @media ${Device.mobile} {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-bottom: 4vh;
   }
 `;
 
@@ -220,7 +259,7 @@ export const PContact = styled.p`
   font-size: 1.4rem;
   line-height: 4vh;
   padding-top: 4vh;
-  font-family: "Noto Sans CJK JP";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     font-size: 1rem;
     padding-bottom: 5vh;

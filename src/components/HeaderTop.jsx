@@ -23,7 +23,7 @@ import {
 
 import { useSelector } from "react-redux";
 
-export default function HeaderTop({ token }) {
+export default function HeaderTop() {
   const { idClient } = useSelector((state) => state.idClientReducer);
 
   return (
@@ -43,7 +43,6 @@ export default function HeaderTop({ token }) {
             <IconLinkedin src={linkedin} alt="logo linkedin" />
           </a>
         </ContainerIcon>
-
         <ContainerConnexionSentence>
           {idClient === 0 ? (
             <ConnexionSentence to="/connection">
@@ -54,8 +53,20 @@ export default function HeaderTop({ token }) {
           ) : (
             <ConnexionSentence to="/clientpage"> Mon Profil </ConnexionSentence>
           )}
-          ;
         </ContainerConnexionSentence>
+        {idClient === 0 ? (
+          <ContainerIconConnexion to="/connection">
+            <IconConnexion src={connect} alt="logo connexion" />
+          </ContainerIconConnexion>
+        ) : idClient === 1 ? (
+          <ConnexionSentence to="/pagefavart">
+            <IconConnexion src={user} alt="logo connexion" />
+          </ConnexionSentence>
+        ) : (
+          <ConnexionSentence to="/clientpage">
+            <IconConnexion src={user} alt="logo connexion" />
+          </ConnexionSentence>
+        )}
       </DivHeaderTop>
     </>
   );

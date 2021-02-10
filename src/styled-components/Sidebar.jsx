@@ -14,7 +14,7 @@ export const FlexBox1 = styled.div`
   width: 100%;
   @media ${Device.mobile} {
     flex-direction: column;
-    height: 5vh;
+    height: 40vh;
   }
 `;
 
@@ -24,27 +24,32 @@ export const Name = styled.h1`
   text-align: center;
   padding-bottom: 2vh;
   width: 100%;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const Company = styled.h2`
   color: white;
   font-size: 1.8rem;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const Info = styled.div`
   padding-top: 40vh;
+  height: 10vh;
+  @media ${Device.mobile} {
+    padding-top: 15vh;
+  }
 `;
 
 export const Button = styled.button`
   width: 100%;
   height: 4vh;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   background-color: transparent;
   margin-top: 5vh;
   border: none;
+  cursor: pointer;
 `;
 
 export const Link1 = styled(Link)`

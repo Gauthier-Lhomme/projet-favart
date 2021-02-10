@@ -3,53 +3,20 @@ import { Device } from "../assets/Device/Device";
 
 export const FlexBox = styled.div`
   display: flex;
-  height: 150vh;
+  height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
+    height: 130vh;
   }
 `;
 
 export const FlexBox1 = styled.div`
   flex: 1;
-  background: rgb(35, 134, 201);
-  background: linear-gradient(
-    180deg,
-    rgba(35, 134, 201, 1) 0%,
-    rgba(18, 34, 57, 1) 100%
-  );
-  height: 100%;
+  height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
     height: 5vh;
   }
-`;
-
-export const Text = styled.div`
-  margin-top: 40vh;
-  @media ${Device.mobile} {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-`;
-
-export const Name = styled.h1`
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 2vh;
-`;
-
-export const Job = styled.h2`
-  color: white;
-  font-size: 1.6rem;
-  text-align: center;
-  padding-bottom: 2vh;
-`;
-
-export const Company = styled.h2`
-  color: white;
-  font-size: 1.8rem;
-  text-align: center;
 `;
 
 export const FlexBox2 = styled.div`
@@ -57,7 +24,11 @@ export const FlexBox2 = styled.div`
   height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
-  padding-top: 8vh;
+  padding-top: 13vh;
+  @media ${Device.mobile} {
+    padding-top: 2vh;
+    height: 90vh;
+  }
 `;
 
 export const Card = styled.div`

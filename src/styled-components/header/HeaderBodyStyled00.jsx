@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 export const Page = styled.div`
   background-color: #f2f8fc;
-  height: 86vh;
+  height: 90vh;
   display: flex;
   margin-top: 14vh;
   @media ${Device.mobile} {
-    padding-bottom: 30vh;
+    padding-bottom: 0vh;
   }
 `;
 
@@ -23,7 +23,7 @@ export const Sommaire = styled.div`
 
 export const Title = styled.div`
   font-size: 2rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   padding-top: 5vh;
   text-decoration: none;
   @media ${Device.mobile} {

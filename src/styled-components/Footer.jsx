@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
+import { Link } from "react-router-dom";
 
 export const FooterMain = styled.footer`
   list-style: none;
   background-color: #122239;
   color: white;
   padding: 0.5%;
+  font-family: "JosefinSans-SemiBold";
+  @media ${Device.mobile} {
+    padding-top: 2vh;
+  }
 `;
 
 export const DivContactUs = styled.div`
@@ -85,4 +90,9 @@ export const UlIconsMobile = styled.ul`
 export const Li = styled.li`
   font-size: 2vh;
   padding-top: 1vh;
+`;
+
+export const A2 = styled(Link)`
+  color: white;
+  text-decoration: none;
 `;

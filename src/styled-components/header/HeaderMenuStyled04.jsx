@@ -25,7 +25,7 @@ export const ContainerHeaderMenuLink = styled.div`
 export const MenuLink = styled(Link)`
   font-size: 1.5rem;
   color: #0e273d;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   text-decoration: none;
   @media ${Device.mobile} {
     font-size: 1.5rem;
@@ -35,7 +35,7 @@ export const MenuLink = styled(Link)`
 export const MenuLinkAction = styled(Link)`
   font-size: 1.5rem;
   color: white;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   text-decoration: none;
   @media ${Device.mobile} {
     font-size: 1.5rem;

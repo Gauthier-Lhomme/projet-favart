@@ -7,6 +7,7 @@ export const FlexBox = styled.div`
   height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
+    height: 120vh;
   }
 `;
 
@@ -24,12 +25,18 @@ export const FlexBox1 = styled.div`
     height: 5vh;
   }
 `;
+
 export const FlexBox2 = styled.div`
   flex: 2;
   height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 25vh;
+  @media ${Device.mobile} {
+    padding-top: 40vh;
+    padding-left: 4vw;
+    height: 150vh;
+  }
 `;
 
 export const Button1 = styled.button`
@@ -40,7 +47,7 @@ export const Button1 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -48,6 +55,10 @@ export const Button1 = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
   }
 `;
 
@@ -59,7 +70,7 @@ export const Button2 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -67,6 +78,10 @@ export const Button2 = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
   }
 `;
 
@@ -78,7 +93,7 @@ export const Button3 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -86,6 +101,10 @@ export const Button3 = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
   }
 `;
 
@@ -97,7 +116,7 @@ export const Button4 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -105,6 +124,11 @@ export const Button4 = styled.button`
   &:hover {
     background: #cdcdcd;
     color: #0d1842;
+  }
+  @media ${Device.mobile} {
+    width: 70vw;
+    height: 15vh;
+    margin-bottom: 10vh;
   }
 `;
 

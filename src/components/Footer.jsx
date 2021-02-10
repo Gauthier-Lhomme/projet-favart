@@ -4,6 +4,7 @@ import {
   Hr,
   UlIcons,
   A,
+  A2,
   DivEndFooter,
   H1,
   DivAdress,
@@ -77,7 +78,7 @@ export default function Footer() {
         })}
       </UlIconsMobile>
       <DivEndFooter>
-        <a href="#">Informations légales</a>
+        <A2 to="/mentionslegales">Informations légales</A2>
         <p>FAVART - 2021</p>
       </DivEndFooter>
     </FooterMain>

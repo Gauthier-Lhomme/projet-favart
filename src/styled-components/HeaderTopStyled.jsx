@@ -12,7 +12,7 @@ export const DivHeaderTop = styled.div`
   top: 0;
   width: 100%;
   @media ${Device.mobile} {
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 10vh;
   }
 `;
@@ -24,9 +24,7 @@ export const Logo = styled.img`
   width: 15vw;
   @media ${Device.mobile} {
     height: 10vh;
-    width: 40vw;
-    margin-right: 20vw;
-    margin-left: 25vw;
+    width: 70vw;
   }
 `;
 export const ContainerIcon = styled.div`
@@ -59,14 +57,18 @@ export const ContainerIconConnexion = styled(Link)`
 `;
 
 export const IconConnexion = styled.img`
+  display: none;
   @media ${Device.mobile} {
-    width: 3vh;
+    display: block;
+    width: 9vw;
+    height: 9vh;
+    margin-right: 6vw;
   }
 `;
 
 export const ContainerConnexionSentence = styled.div`
   font-size: 0.8rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     display: none;
   }
@@ -74,6 +76,7 @@ export const ContainerConnexionSentence = styled.div`
 
 export const ConnexionSentence = styled(Link)`
   font-size: 1.5rem;
+  color: #122239;
   @media ${Device.mobile} {
     font-size: 1rem;
   }

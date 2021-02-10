@@ -23,7 +23,7 @@ export const Title = styled.h1`
   font-size: 17vh;
   color: black;
   text-transform: uppercase;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     font-size: 3rem;
   }
@@ -59,7 +59,7 @@ export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;
   color: black;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     font-size: 1.5rem;
   }

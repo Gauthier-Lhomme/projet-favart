@@ -9,21 +9,6 @@ export const FlexBox = styled.div`
   }
 `;
 
-export const FlexBox1 = styled.div`
-  flex: 1;
-  background: rgb(35, 134, 201);
-  background: linear-gradient(
-    180deg,
-    rgba(35, 134, 201, 1) 0%,
-    rgba(18, 34, 57, 1) 100%
-  );
-  height: 100vh;
-  @media ${Device.mobile} {
-    flex-direction: column;
-    height: 5vh;
-  }
-`;
-
 export const FlexBox2 = styled.div`
   flex: 2;
   height: 100vh;
@@ -34,10 +19,11 @@ export const FlexBox2 = styled.div`
 
 export const P = styled.h1`
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   margin-top: 20vh;
   @media ${Device.mobile} {
     margin-left: 2vw;
+    margin-top: 1vh;
   }
 `;
 
@@ -120,6 +106,16 @@ export const InputSite = styled.input`
   }
 `;
 
+export const InputDescription = styled.textarea`
+  width: 50%;
+  text-align: center;
+  font-family: "Noto Sans CJK JP";
+  @media ${Device.mobile} {
+    width: 82vw;
+    resize: none;
+  }
+`;
+
 export const Textarea = styled.textarea`
   width: 77%;
   height: 25vh;
@@ -144,7 +140,7 @@ export const TextareaEnvies = styled.textarea`
 export const StyledButton = styled.button`
   padding: 2 2vw;
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-SemiBold";
   border: none;
   background: #122239;
   color: #c4c1c7;
@@ -162,7 +158,7 @@ export const StyledButton = styled.button`
     cursor: pointer;
   }
   @media ${Device.mobile} {
-    margin-left: 27vw;
+    margin-left: 25vw;
     margin-bottom: 4vh;
     height: 9vw;
   }

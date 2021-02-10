@@ -1,15 +1,15 @@
 import useForm from "./UpdateRessources.jsx";
 
 import {
-  FlexBox1,
-  FlexBox,
   FlexBox2,
+  FlexBox,
   P,
   Formulaire,
   DivLabel,
   Label,
   Input,
   StyledButton,
+  InputDescription,
 } from "../styled-components/UpdateRessourcesForm";
 
 import SideBar from "./Sidebar";
@@ -20,9 +20,7 @@ export default function Inscription() {
   return (
     <>
       <FlexBox>
-        <FlexBox1>
-          <SideBar />
-        </FlexBox1>
+        <SideBar />
         <FlexBox2>
           <P>Remplissez les champs suivants pour ajouter un document :</P>
           <Formulaire onSubmit={handleSubmit}>
@@ -51,7 +49,7 @@ export default function Inscription() {
               </DivLabel>
               <DivLabel>
                 <Label>Description *</Label>
-                <Input
+                <InputDescription
                   type="text"
                   name="description"
                   placeholder="Description"

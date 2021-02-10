@@ -20,6 +20,7 @@ import {
   DivLogo,
   ButtonCardMiddle,
   ButtonFlash,
+  ButtonEnd,
 } from "../styled-components/ActionPage";
 import geffroy from "../assets/ActionImg/Geffroy.jpeg";
 import marsac from "../assets/ActionImg/Marsac.jpeg";
@@ -35,7 +36,7 @@ export default function ActionPage() {
           <P>
             Vous souhaitez avoir accès au centre de ressources Favart :
             présentation institutionnelle, retours d’expériences, présentation
-            détaillée de nos 4 ingénieries, ...
+            détaillée de nos 4 ingénieries ...
           </P>
           <DivCenter>
             <Button>Nous rejoindre</Button>
@@ -133,7 +134,7 @@ export default function ActionPage() {
       <div>
         <DivCenter>
           <a href="https://meetings.hubspot.com/yoann-geffroy" target="_blank">
-            <Button>Rendez-vous flash</Button>
+            <ButtonEnd>Rendez-vous flash</ButtonEnd>
           </a>
         </DivCenter>
       </div>
