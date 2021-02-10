@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import { api } from "../conf";
 import { useSelector } from "react-redux";
 
 export default function useForm() {
@@ -28,8 +28,8 @@ export default function useForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     delete values.password2;
-    axios
-      .patch(`http://localhost:3001/client/${idClient}`, values)
+    api
+      .patch(`/client/${idClient}`, values)
       .then((res) => {
         setValues(res.data);
       });
