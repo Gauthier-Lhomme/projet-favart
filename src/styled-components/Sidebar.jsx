@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
+import { Link } from "react-router-dom";
 
 export const FlexBox1 = styled.div`
   flex: 1;
@@ -10,8 +11,7 @@ export const FlexBox1 = styled.div`
     rgba(18, 34, 57, 1) 100%
   );
   height: 100vh;
-  width: 25%;
-
+  width: 100%;
   @media ${Device.mobile} {
     flex-direction: column;
     height: 5vh;
@@ -23,18 +23,32 @@ export const Name = styled.h1`
   font-size: 2rem;
   text-align: center;
   padding-bottom: 2vh;
+  width: 100%;
+  font-family: "Josefin Sans";
 `;
 
 export const Company = styled.h2`
   color: white;
   font-size: 1.8rem;
   text-align: center;
+  font-family: "Josefin Sans";
 `;
 
 export const Info = styled.div`
-  padding-top: 85%;
+  padding-top: 40vh;
 `;
 
 export const Button = styled.button`
-  padding: 4vh;
+  width: 100%;
+  height: 4vh;
+  font-family: "Josefin Sans";
+  background-color: transparent;
+  margin-top: 5vh;
+  border: none;
+`;
+
+export const Link1 = styled(Link)`
+  width: 10vw;
+  color: white;
+  font-size: 1.4rem;
 `;

@@ -22,8 +22,12 @@ export default function useForm({ setToken }) {
     e.preventDefault();
     api.post("/auth/login", values).then((res) => {
       setToken(res.data.token);
-      dispatch({ type: "SET_ID", test: res.data.idClient });
-      history.push("/clientpage");
+      dispatch({ type: "SET_ID", setId: res.data.idClient });
+      if (res.data.idClient === 1) {
+        history.push("/pagefavart");
+      } else {
+        history.push("/clientpage");
+      }
     });
   };
 
