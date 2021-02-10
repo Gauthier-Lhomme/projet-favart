@@ -3,7 +3,7 @@ import { Device } from "../assets/Device/Device";
 
 export const FlexBox = styled.div`
   display: flex;
-  height: 117vh;
+  height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
   }

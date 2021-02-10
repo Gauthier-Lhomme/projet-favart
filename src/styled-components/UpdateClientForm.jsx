@@ -76,6 +76,8 @@ export const DivLabelText = styled.div`
   width: 100%;
   height: 2.7vh;
   @media ${Device.mobile} {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 `;
 
@@ -152,7 +154,7 @@ export const TextareaEnvies = styled.textarea`
   resize: none;
   @media ${Device.mobile} {
     width: 86vw;
-    margin-top: 11vh;
+    margin-top: 0vh;
   }
 `;
 
@@ -177,8 +179,9 @@ export const StyledButton = styled.button`
     cursor: pointer;
   }
   @media ${Device.mobile} {
-    margin-left: 27vw;
+    margin-left: 23vw;
     margin-bottom: 4vh;
+    margin-top: 20vh;
     height: 9vw;
   }
 `;

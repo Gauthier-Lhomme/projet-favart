@@ -119,7 +119,7 @@ export const ButtonCardMiddle = styled.div`
   padding: 2vh;
   width: 17vw;
   cursor: pointer;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   &:hover {
     color: grey;
     transition-duration: 500ms;
@@ -151,6 +151,9 @@ export const ButtonFlash = styled.button`
     font-size: 1rem;
     margin-top: 8vh;
     width: 50vw;
+  }
+  @media ${Device.retro} {
+    margin-top: 20vh;
   }
 `;
 
@@ -256,7 +259,7 @@ export const PContact = styled.p`
   font-size: 1.4rem;
   line-height: 4vh;
   padding-top: 4vh;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   @media ${Device.mobile} {
     font-size: 1rem;
     padding-bottom: 5vh;

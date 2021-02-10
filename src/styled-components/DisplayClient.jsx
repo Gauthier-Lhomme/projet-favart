@@ -3,20 +3,15 @@ import { Device } from "../assets/Device/Device";
 
 export const FlexBox = styled.div`
   display: flex;
-  height: 150vh;
+  height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
+    height: 130vh;
   }
 `;
 
 export const FlexBox1 = styled.div`
   flex: 1;
-  background: rgb(35, 134, 201);
-  background: linear-gradient(
-    180deg,
-    rgba(35, 134, 201, 1) 0%,
-    rgba(18, 34, 57, 1) 100%
-  );
   height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
@@ -30,6 +25,10 @@ export const FlexBox2 = styled.div`
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 13vh;
+  @media ${Device.mobile} {
+    padding-top: 2vh;
+    height: 90vh;
+  }
 `;
 
 export const Card = styled.div`

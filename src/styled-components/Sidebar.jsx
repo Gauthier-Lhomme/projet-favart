@@ -14,7 +14,7 @@ export const FlexBox1 = styled.div`
   width: 100%;
   @media ${Device.mobile} {
     flex-direction: column;
-    height: 5vh;
+    height: 40vh;
   }
 `;
 
@@ -36,8 +36,10 @@ export const Company = styled.h2`
 
 export const Info = styled.div`
   padding-top: 40vh;
-  height: 150vh;
-
+  height: 10vh;
+  @media ${Device.mobile} {
+    padding-top: 15vh;
+  }
 `;
 
 export const Button = styled.button`

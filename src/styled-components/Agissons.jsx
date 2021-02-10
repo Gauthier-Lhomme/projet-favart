@@ -68,12 +68,15 @@ export const Title = styled.h1`
     text-align: center;
     font-size: 1.7rem;
   }
+  @media ${Device.retro} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const IdeeForte = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -81,18 +84,24 @@ export const IdeeForte = styled.h1`
   @media ${Device.mobile} {
     font-size: 1rem;
   }
+  @media ${Device.retro} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Text = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
+  }
+  @media ${Device.retro} {
+    font-size: 1.5rem;
   }
 `;
 
@@ -110,6 +119,10 @@ export const CardImg = styled.img`
     width: 70vw;
     left: 10vw;
     bottom: -20vh;
+  }
+  @media ${Device.retro} {
+    width: 30vw;
+    left: 80vh;
   }
 `;
 
@@ -156,12 +169,15 @@ export const Title2 = styled.h1`
     font-size: 1.7rem;
     padding-left: 0;
   }
+  @media ${Device.retro} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const IdeeForte2 = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -170,12 +186,15 @@ export const IdeeForte2 = styled.h1`
     font-size: 1rem;
     padding-left: 0;
   }
+  @media ${Device.retro} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Text2 = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
@@ -183,6 +202,9 @@ export const Text2 = styled.h2`
     font-size: 0.85rem;
     text-align: center;
     padding-left: 0;
+  }
+  @media ${Device.retro} {
+    font-size: 1.5rem;
   }
 `;
 
@@ -198,6 +220,10 @@ export const CardImg2 = styled.img`
     width: 70vw;
     left: 10vw;
     bottom: -19vh;
+  }
+  @media ${Device.retro} {
+    width: 30vw;
+    right: 80vh;
   }
 `;
 
@@ -243,12 +269,15 @@ export const Title3 = styled.h1`
     font-size: 1.7rem;
     padding-left: 0vw;
   }
+  @media ${Device.retro} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const IdeeForte3 = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -256,18 +285,24 @@ export const IdeeForte3 = styled.h1`
   @media ${Device.mobile} {
     font-size: 1rem;
   }
+  @media ${Device.retro} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Text3 = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
+  }
+  @media ${Device.retro} {
+    font-size: 1.5rem;
   }
 `;
 
@@ -283,6 +318,10 @@ export const CardImg3 = styled.img`
     width: 70vw;
     left: 10vw;
     bottom: -17vh;
+  }
+  @media ${Device.retro} {
+    width: 30vw;
+    left: 80vh;
   }
 `;
 
@@ -331,12 +370,15 @@ export const Title4 = styled.h1`
     font-size: 1.7rem;
     padding-left: 0;
   }
+  @media ${Device.retro} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const IdeeForte4 = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -345,12 +387,15 @@ export const IdeeForte4 = styled.h1`
     font-size: 1rem;
     padding-left: 0;
   }
+  @media ${Device.retro} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Text4 = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "Noto Sans CJK JP";
+  font-family: "Josefin Sans";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
@@ -358,6 +403,9 @@ export const Text4 = styled.h2`
     font-size: 0.85rem;
     text-align: center;
     padding-left: 0;
+  }
+  @media ${Device.retro} {
+    font-size: 1.5rem;
   }
 `;
 
@@ -373,6 +421,10 @@ export const CardImg4 = styled.img`
     width: 70vw;
     left: 10vw;
     bottom: -19vh;
+  }
+  @media ${Device.retro} {
+    width: 30vw;
+    right: 80vh;
   }
 `;
 

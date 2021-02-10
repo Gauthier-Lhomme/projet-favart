@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 export const FlexBox = styled.div`
   display: flex;
-  height: 150vh;
+  height: 100vh;
   @media ${Device.mobile} {
     flex-direction: column;
+    height: 120vh;
   }
 `;
 
@@ -32,9 +33,9 @@ export const FlexBox2 = styled.div`
   padding-left: 3vw;
   padding-top: 25vh;
   @media ${Device.mobile} {
-    padding-top: 10vh;
+    padding-top: 40vh;
     padding-left: 4vw;
-
+    height: 150vh;
   }
 `;
 
@@ -127,6 +128,7 @@ export const Button4 = styled.button`
   @media ${Device.mobile} {
     width: 70vw;
     height: 15vh;
+    margin-bottom: 10vh;
   }
 `;
 
