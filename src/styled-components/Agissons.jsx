@@ -50,8 +50,8 @@ export const Card = styled.div`
 `;
 
 export const CardText = styled.div`
-  width: 50vw;
-  margin-right: 5vw;
+  width: 35vw;
+  margin-right: 10vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-right: 0vw;
@@ -150,9 +150,9 @@ export const Card2 = styled.div`
 `;
 
 export const CardText2 = styled.div`
-  width: 50vw;
+  width: 35vw;
   margin-left: 3vw;
-  margin-right: 2vw;
+  margin-right: 0vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-left: 0vw;
@@ -251,8 +251,8 @@ export const Card3 = styled.div`
 `;
 
 export const CardText3 = styled.div`
-  width: 50vw;
-  margin-right: 5vw;
+  width: 35vw;
+  margin-right: 10vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-right: 0vw;
@@ -351,9 +351,9 @@ export const Card4 = styled.div`
 `;
 
 export const CardText4 = styled.div`
-  width: 50vw;
+  width: 35vw;
   margin-left: 3vw;
-  margin-right: 2vw;
+  margin-right: 0vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-left: 0vw;
