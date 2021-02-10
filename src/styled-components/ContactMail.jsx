@@ -3,10 +3,11 @@ import { Device } from "../assets/Device/Device";
 
 export const Back = styled.div`
   position: relative;
+  height: 100vh;
 `;
 
 export const Background = styled.img`
-  height: 91.4vh;
+  height: 100vh;
   width: 99.2vw;
   opacity: 0.5;
 `;
