@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { api } from "../assets/conf";
+
 import {
   Page,
   FirstTitle,
@@ -20,7 +22,7 @@ export default function ProjetsCards() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5050/projets")
+      .get(`${api.defaults.baseURL}/projets`)
       .then(function (response) {
         setProjets(response.data);
       })

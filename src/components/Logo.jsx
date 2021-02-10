@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { api } from "../assets/conf";
 import {
   Img,
   ContainerLogoCaroussel,
@@ -33,7 +34,7 @@ export default function Logo() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5050/logos/")
+      .get(`${api.defaults.baseURL}/logos/`)
       .then(function (response) {
         setLogos(response.data);
       })
