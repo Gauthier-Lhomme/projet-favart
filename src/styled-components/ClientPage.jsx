@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
+import { Link } from "react-router-dom";
 
 export const FlexBox = styled.div`
   display: flex;
@@ -87,13 +88,13 @@ export const RessourcesImg = styled.img`
   }
 `;
 
-export const Agir = styled.h1`
+export const Agir = styled(Link)`
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 3vh;
   margin-top: 8vh;
   color: #122239;
-  text-decoration: underline;
+  text-decoration: none;
 `;
 
 export const AgirFlex = styled.div`

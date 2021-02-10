@@ -65,14 +65,12 @@ export const Li = styled.li`
 `;
 
 export const H2 = styled.h2`
-padding-top : 3vh;
+  padding-top: 3vh;
   text-align: center;
   font-size: 2rem;
   @media ${Device.mobile} {
     font-size: 1.4rem;
   }
-}
-
 `;
 
 export const H2MiddleCard = styled.h2`

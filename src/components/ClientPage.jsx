@@ -1,13 +1,11 @@
 import ImgRessources from "../assets/ImgRessources.jpg";
 
+import SideBar from "./Sidebar";
+
 import {
   FlexBox,
   FlexBox1,
   FlexBox2,
-  Name,
-  Job,
-  Company,
-  Text,
   Ressources,
   RessourcesFlex,
   TextRessources,
@@ -24,11 +22,7 @@ export default function connexion() {
   return (
     <FlexBox>
       <FlexBox1>
-        <Text>
-          <Name>Name Surname</Name>
-          <Job>Function</Job>
-          <Company>Company</Company>
-        </Text>
+        <SideBar />
       </FlexBox1>
       <FlexBox2>
         <Ressources>Accéder au centre de ressources Favart</Ressources>
@@ -40,14 +34,10 @@ export default function connexion() {
           </TextRessources>
           <RessourcesImg src={ImgRessources}></RessourcesImg>
         </RessourcesFlex>
-        <Agir>Agissons ensemble</Agir>
+        <Agir to="/updateclient">Votre profil</Agir>
         <AgirFlex>
           <AgirImg src={ImgRessources}></AgirImg>
-          <TextAgir>
-            Lorem ipsum color si damet Lorem ipsum color si dametLorem ipsum
-            color si dametLorem ipsum color si dametLorem ipsum color si
-            dametLorem ipsum color si
-          </TextAgir>
+          <TextAgir>Accédez à votre profil afin de le modifier.</TextAgir>
         </AgirFlex>
         <Flash>Echange flash avec nous</Flash>
         <TextFlash>
