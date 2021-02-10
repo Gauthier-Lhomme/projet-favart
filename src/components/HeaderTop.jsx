@@ -23,8 +23,8 @@ import {
 
 import { useSelector } from "react-redux";
 
-export default function HeaderTop({ token }) {
-  const { tokenClient } = useSelector((state) => state.tokenClientReducer);
+export default function HeaderTop() {
+  const { idClient } = useSelector((state) => state.idClientReducer);
 
   return (
     <>
@@ -43,10 +43,8 @@ export default function HeaderTop({ token }) {
             <IconLinkedin src={linkedin} alt="logo linkedin" />
           </a>
         </ContainerIcon>
-
         <ContainerConnexionSentence>
-          {tokenClient === "0" ? (
-
+          {idClient === 0 ? (
             <ConnexionSentence to="/connection">
               Connexion / Inscription
             </ConnexionSentence>
@@ -55,19 +53,20 @@ export default function HeaderTop({ token }) {
           ) : (
             <ConnexionSentence to="/clientpage"> Mon Profil </ConnexionSentence>
           )}
-          ;
         </ContainerConnexionSentence>
-        
-        {tokenClient === "0" ? (
+        {idClient === 0 ? (
           <ContainerIconConnexion to="/connection">
             <IconConnexion src={connect} alt="logo connexion" />
           </ContainerIconConnexion>
-        ) : (
-          <ContainerIconConnexion to="/clientpage">
+        ) : idClient === 1 ? (
+          <ConnexionSentence to="/pagefavart">
             <IconConnexion src={user} alt="logo connexion" />
-          </ContainerIconConnexion>
+          </ConnexionSentence>
+        ) : (
+          <ConnexionSentence to="/clientpage">
+            <IconConnexion src={user} alt="logo connexion" />
+          </ConnexionSentence>
         )}
-
       </DivHeaderTop>
     </>
   );

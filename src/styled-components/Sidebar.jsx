@@ -49,6 +49,7 @@ export const Button = styled.button`
   background-color: transparent;
   margin-top: 5vh;
   border: none;
+  cursor: pointer;
 `;
 
 export const Link1 = styled(Link)`

@@ -1,4 +1,5 @@
 @font-face {
-    font-family: "JosefinSans-SemiBold";
-    src: local("JosefinSans-SemiBold"), url(./assets/fonts/josefin-sans/JosefinSans-SemiBold.ttf) format("truetype");
+  font-family: "JosefinSans-SemiBold";
+  src: local("JosefinSans-SemiBold"),
+    url(./assets/fonts/josefin-sans/JosefinSans-SemiBold.ttf) format("truetype");
 }

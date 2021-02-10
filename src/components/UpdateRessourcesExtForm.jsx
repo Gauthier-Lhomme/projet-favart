@@ -2,7 +2,6 @@ import useForm from "./UpdateRessourcesExt.jsx";
 
 import {
   FlexBox,
-  FlexBox1,
   FlexBox2,
   P,
   Formulaire,
@@ -21,9 +20,7 @@ export default function Inscription() {
   return (
     <>
       <FlexBox>
-        <FlexBox1>
-          <SideBar />
-        </FlexBox1>
+        <SideBar />
         <FlexBox2>
           <P>Remplissez les champs suivants pour ajouter un document :</P>
           <Formulaire onSubmit={handleSubmit}>

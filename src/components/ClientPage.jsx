@@ -5,18 +5,13 @@ import Footer from "./Footer";
 
 import {
   FlexBox,
-  FlexBox1,
   FlexBox2,
   Ressources,
   RessourcesFlex,
-  TextRessources,
-  RessourcesImg,
   Agir,
   AgirFlex,
   TextAgir,
-  AgirImg,
   Flash,
-  TextFlash,
   ButtonFavart,
   ButtonExt,
   DivCenter,
@@ -29,9 +24,7 @@ export default function connexion() {
   return (
     <>
       <FlexBox>
-        <FlexBox1>
-          <SideBar />
-        </FlexBox1>
+        <SideBar />
         <FlexBox2>
           <Ressources>Accéder au centre de ressources Favart</Ressources>
           <RessourcesFlex>

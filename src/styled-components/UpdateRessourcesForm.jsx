@@ -9,20 +9,6 @@ export const FlexBox = styled.div`
   }
 `;
 
-export const FlexBox1 = styled.div`
-  flex: 1;
-  background: rgb(35, 134, 201);
-  background: linear-gradient(
-    180deg,
-    rgba(35, 134, 201, 1) 0%,
-    rgba(18, 34, 57, 1) 100%
-  );
-  height: 100vh;
-  @media ${Device.mobile} {
-    flex-direction: column;
-  }
-`;
-
 export const FlexBox2 = styled.div`
   flex: 2;
   padding-right: 3vw;

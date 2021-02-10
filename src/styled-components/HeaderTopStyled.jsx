@@ -59,9 +59,12 @@ export const ContainerIconConnexion = styled(Link)`
 `;
 
 export const IconConnexion = styled.img`
+  display: none;
   @media ${Device.mobile} {
-    width: 3vh;
-    margin-right: 5vw;
+    display: block;
+    width: 9vw;
+    height: 9vh;
+    margin-right: 6vw;
   }
 `;
 

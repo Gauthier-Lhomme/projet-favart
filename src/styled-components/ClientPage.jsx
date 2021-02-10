@@ -5,33 +5,21 @@ import { Link } from "react-router-dom";
 export const FlexBox = styled.div`
   display: flex;
   height: 100vh;
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     flex-direction: column;
-  }
-`;
-
-export const FlexBox1 = styled.div`
-  flex: 1;
-  background: rgb(35, 134, 201);
-  background: linear-gradient(
-    180deg,
-    rgba(35, 134, 201, 1) 0%,
-    rgba(18, 34, 57, 1) 100%
-  );
-  height: 100vh;
-  @media ${Device.mobile} {
-    flex-direction: column;
-    height: 5vh;
+    height: 110vh;
   }
 `;
 
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
-  padding-top: 10vh;
-  font-family: "JosefinSans-SemiBold";
+  padding-top: 8vh;
+  @media ${Device.mobile} {
+    padding-top: 0vh;
+  }
 `;
 
 export const Ressources = styled.h1`
@@ -41,6 +29,9 @@ export const Ressources = styled.h1`
   margin-top: 15vh;
   color: #122239;
   text-decoration: underline;
+  @media ${Device.mobile} {
+    margin-top: 2vh;
+  }
 `;
 
 export const RessourcesFlex = styled.div`
@@ -179,5 +170,6 @@ export const ButtonEnd = styled.button`
   @media ${Device.mobile} {
     font-size: 1rem;
     width: 40vw;
+    margin-bottom: 2vh;
   }
 `;

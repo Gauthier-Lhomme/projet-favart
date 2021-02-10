@@ -18,12 +18,6 @@ export default function Sidebar({ setToken }) {
   const dispatch = useDispatch();
 
   const { idClient } = useSelector((state) => state.idClientReducer);
-  const { tokenClient } = useSelector((state) => state.tokenClientReducer);
-
-  function handleClick(e) {
-    e.preventDefault();
-    dispatch({ type: "SET_TOKEN", test: "0" });
-  }
 
   function handleClick(e) {
     e.preventDefault();
