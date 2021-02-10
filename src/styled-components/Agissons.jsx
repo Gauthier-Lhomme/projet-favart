@@ -14,7 +14,7 @@ export const P = styled.p`
   text-align: center;
   margin-top: 15vh;
   margin-bottom: 6vh;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   font-weight: bold;
   color: #122239;
   @media ${Device.mobile} {
@@ -60,7 +60,7 @@ export const CardText = styled.div`
 
 export const Title = styled.h1`
   font-size: 2rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 2vh;
   padding-left: 1vw;
   text-align: justify;
@@ -76,7 +76,7 @@ export const Title = styled.h1`
 export const IdeeForte = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -92,7 +92,7 @@ export const IdeeForte = styled.h1`
 export const Text = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
@@ -161,7 +161,7 @@ export const CardText2 = styled.div`
 
 export const Title2 = styled.h1`
   font-size: 2rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
@@ -177,7 +177,7 @@ export const Title2 = styled.h1`
 export const IdeeForte2 = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -194,7 +194,7 @@ export const IdeeForte2 = styled.h1`
 export const Text2 = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
@@ -261,7 +261,7 @@ export const CardText3 = styled.div`
 
 export const Title3 = styled.h1`
   font-size: 2rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
@@ -277,7 +277,7 @@ export const Title3 = styled.h1`
 export const IdeeForte3 = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -293,7 +293,7 @@ export const IdeeForte3 = styled.h1`
 export const Text3 = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
@@ -362,7 +362,7 @@ export const CardText4 = styled.div`
 
 export const Title4 = styled.h1`
   font-size: 2rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
@@ -378,7 +378,7 @@ export const Title4 = styled.h1`
 export const IdeeForte4 = styled.h1`
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
@@ -395,7 +395,7 @@ export const IdeeForte4 = styled.h1`
 export const Text4 = styled.h2`
   font-size: 1.1rem;
   padding-left: 1vw;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   padding-bottom: 1vh;
   line-height: 1.2rem;
   text-align: justify;
@@ -459,7 +459,7 @@ export const Button1 = styled.a`
 
 export const P1 = styled.p`
   font-size: 2.5rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   position: absolute;
   left: 15%;
   top: 30%;
@@ -468,7 +468,7 @@ export const P1 = styled.p`
 
 export const P2 = styled.p`
   font-size: 2.5rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   position: absolute;
   left: 8.5%;
   top: 30%;
@@ -477,7 +477,7 @@ export const P2 = styled.p`
 
 export const P3 = styled.p`
   font-size: 2.5rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   position: absolute;
   left: 14.5%;
   top: 30%;

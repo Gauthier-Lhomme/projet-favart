@@ -7,7 +7,7 @@ export const FooterMain = styled.footer`
   background-color: #122239;
   color: white;
   padding: 0.5%;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     padding-top: 2vh;
   }

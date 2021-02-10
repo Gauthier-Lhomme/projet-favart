@@ -24,14 +24,14 @@ export const Name = styled.h1`
   text-align: center;
   padding-bottom: 2vh;
   width: 100%;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const Company = styled.h2`
   color: white;
   font-size: 1.8rem;
   text-align: center;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const Info = styled.div`
@@ -45,7 +45,7 @@ export const Info = styled.div`
 export const Button = styled.button`
   width: 100%;
   height: 4vh;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   background-color: transparent;
   margin-top: 5vh;
   border: none;

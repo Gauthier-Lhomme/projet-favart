@@ -71,7 +71,7 @@ export const Slogan = styled.h1`
   padding-right: 5vw;
   padding-left: 5vw;
   font-weight: bold;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     display: none;
   }
@@ -80,12 +80,12 @@ export const Slogan = styled.h1`
 export const Span = styled.span`
   color: white;
   font-size: 3rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const TitleForm = styled.h1`
   font-size: 3rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   margin-top: 2vh;
   @media ${Device.mobile} {
     font-size: 1.6rem;

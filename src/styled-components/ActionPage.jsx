@@ -4,7 +4,7 @@ import { Device } from "../assets/Device/Device";
 export const DivMain = styled.div`
   padding-top: 10vh;
   background-color: #f2f8fc;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 //Informations cards
@@ -119,7 +119,7 @@ export const ButtonCardMiddle = styled.div`
   padding: 2vh;
   width: 17vw;
   cursor: pointer;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   &:hover {
     color: grey;
     transition-duration: 500ms;
@@ -208,7 +208,7 @@ export const H1 = styled.h1`
   text-align: center;
   margin-top: 15vh;
   margin-bottom: 6vh;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   font-weight: bold;
   color: #122239;
   @media ${Device.mobile} {
@@ -259,7 +259,7 @@ export const PContact = styled.p`
   font-size: 1.4rem;
   line-height: 4vh;
   padding-top: 4vh;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     font-size: 1rem;
     padding-bottom: 5vh;

@@ -31,7 +31,7 @@ export const FlexBox2 = styled.div`
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 10vh;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const Ressources = styled.h1`
@@ -69,7 +69,7 @@ export const ButtonFavart = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -92,7 +92,7 @@ export const ButtonExt = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -160,7 +160,7 @@ export const DivCenter = styled.div`
 
 export const ButtonEnd = styled.button`
   background-color: #122239;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   color: white;
   border: none;
   border-radius: 5px;

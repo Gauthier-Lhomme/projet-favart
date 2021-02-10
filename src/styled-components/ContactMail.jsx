@@ -32,7 +32,7 @@ export const Label = styled.label`
   margin-bottom: 0.5vw;
   width: 30%;
   font-size: 1.5rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     display: none;
   }
@@ -41,7 +41,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   width: 50%;
   text-align: center;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   opacity: 0.8;
   margin-bottom: 2vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -54,7 +54,7 @@ export const Textarea = styled.textarea`
   width: 51.5%;
   height: 25vh;
   text-align: center;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   opacity: 0.8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   @media ${Device.mobile} {
@@ -66,7 +66,7 @@ export const Button = styled.button`
   width: 8vw;
   height: 5vh;
   font-size: 1.5rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   border: none;
   background: #122239;
   color: #c4c1c7;

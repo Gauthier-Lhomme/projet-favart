@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const Body = styled.div`
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   background-color: #f2f8fc;
   margin-top: 21vh;
 `;
@@ -15,7 +15,7 @@ export const FSentence = styled.h1`
   margin-left: 5vw;
   color: #122239;
   margin-right: 5vw;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   font-weight: bold;
   @media ${Device.mobile} {
     font-size: 1.5rem;

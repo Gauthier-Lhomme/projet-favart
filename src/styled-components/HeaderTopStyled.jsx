@@ -67,7 +67,7 @@ export const IconConnexion = styled.img`
 
 export const ContainerConnexionSentence = styled.div`
   font-size: 0.8rem;
-  font-family: "JosefinSans-Regular";
+  font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     display: none;
   }
