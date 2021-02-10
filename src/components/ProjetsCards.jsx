@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { api } from "../assets/conf";
 
@@ -21,8 +20,8 @@ export default function ProjetsCards() {
   const [isDisplay, setDisplay] = useState({ isDisplay: false, id: "" });
 
   useEffect(() => {
-    axios
-      .get(`${api.defaults.baseURL}/projets`)
+    api
+      .get(`/projets`)
       .then(function (response) {
         setProjets(response.data);
       })

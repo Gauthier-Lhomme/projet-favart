@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { api } from "../assets/conf";
 import {
   Img,
@@ -33,8 +32,8 @@ export default function Logo() {
   const [logos, setLogos] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${api.defaults.baseURL}/logos/`)
+    api
+      .get(`/logos`)
       .then(function (response) {
         setLogos(response.data);
       })

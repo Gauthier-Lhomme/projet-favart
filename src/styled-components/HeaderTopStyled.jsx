@@ -45,11 +45,6 @@ export const IconLinkedin = styled.img`
 
 export const LinkMail = styled(Link)`
   padding-left: 2vw;
-  padding-right: 2vw;
-`;
-
-export const LinkMail = styled(Link)`
-  padding-left: 2vw;
 `;
 
 export const IconMail = styled.img`
