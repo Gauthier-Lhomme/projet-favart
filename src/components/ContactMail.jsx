@@ -11,6 +11,8 @@ import {
   Button,
 } from "../styled-components/ContactMail.jsx";
 
+import Footer from "./Footer";
+
 import emailjs from "emailjs-com";
 toast.configure();
 
@@ -20,7 +22,7 @@ export default function ContactUs() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_q3jbdzm",
+      "service_tzb8m7g",
       "template_stdceyl",
       e.target,
       "user_NKYLcqZwiFms9AL3RjBZO"
@@ -29,17 +31,20 @@ export default function ContactUs() {
   }
 
   return (
-    <Back>
-      <Background src={contact} />
-      <Formulaire className="contact-form" onSubmit={sendEmail}>
-        <Label>Email</Label>
-        <Input type="email" name="user_email" required />
-        <Label>Message</Label>
-        <Textarea name="message" required />
-        <Button type="submit" value="Send" onClick={notify}>
-          Envoyer
-        </Button>
-      </Formulaire>
-    </Back>
+    <>
+      <Back>
+        <Background src={contact} />
+        <Formulaire className="contact-form" onSubmit={sendEmail}>
+          <Label>Email</Label>
+          <Input type="email" name="user_email" required />
+          <Label>Message</Label>
+          <Textarea name="message" required />
+          <Button type="submit" value="Send" onClick={notify}>
+            Envoyer
+          </Button>
+        </Formulaire>
+      </Back>
+      <Footer />
+    </>
   );
 }
