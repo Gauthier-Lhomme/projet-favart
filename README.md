@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# FAVART
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Intro
 
-## Available Scripts
+This project was made in 2 months.
 
-In the project directory, you can run:
+This project is split into several repositories.
 
-### `npm start`
+- The Frontend : [here](https://github.com/WildCodeSchool/lille-0920-js-p3-favart)
+- The Backend : [here](https://github.com/WildCodeSchool/lille-0920-js-p3-favart-backend)
+- The AdminPanel : [here](https://github.com/WildCodeSchool/lille-0920-js-p3-favart-admin)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies used
 
-### `npm test`
+### Front-End
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Styled-component
 
-### `npm run build`
+### Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- NodeJS (with Express)
+- MySQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before starting the project, you will need the backend :
 
-### `npm run eject`
+\`\`\`
+git clone https://github.com/WildCodeSchool/lille-0920-js-p3-favart-backend.git
+cd lille-0920-js-p3-favart-backend
+npm install
+\`\`\`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Config the backend
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You need to create an `.env` file at the base of the project and assign the correct values for each variables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+\`\`\`
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_SCHEMA=
+BACK_PORT=
+\`\`\`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+And import each sql files in your database !
 
-## Learn More
+### To start the backend server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+\`\`\`
+nodemon server.js
+\`\`\`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### How to install the frontend locally
 
-### Code Splitting
+\`\`\`
+git clone https://github.com/WildCodeSchool/lille-0920-js-p3-favart.git
+cd lille-0920-js-p3-favart
+npm install
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### To start the project
 
-### Analyzing the Bundle Size
+\`\`\`
+npm start
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open `localhost:3000` and enjoy !
 
-### Making a Progressive Web App
+### How to install the Admin panel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You will need the admin panel project to administrate your website !
 
-### Advanced Configuration
+\`\`\`
+git clone https://github.com/WildCodeSchool/lille-0920-js-p3-favart-admin.git
+cd lille-0920-js-p3-favart-admin
+npm install
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### To start the project
 
-### Deployment
+\`\`\`
+npm start
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributors
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@Marie-Garde](https://github.com/Marie-Garde)
+- [@Gauthier-Lhomme](https://github.com/Gauthier-Lhomme)
+- [@Fx-Colliot](https://github.com/Fx-Colliot)
+- [@Thoms-C](https://github.com/Thoms-C)

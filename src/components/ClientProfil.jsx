@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import axios from "axios";
+import { api } from "../conf";
 
 import {
   FlexBox,
@@ -19,10 +19,7 @@ export default () => {
 
   useEffect(() => {
     setLoading(true);
-    axios({
-      method: "GET",
-      url: `http://localhost:3001/client/${idClient}`,
-    }).then((res) => {
+    api.get(`/client/${idClient}`).then((res) => {
       setClients(res.data[0]);
       setLoading(false);
     });
