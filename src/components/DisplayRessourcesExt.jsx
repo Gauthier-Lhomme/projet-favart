@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { api } from "../conf";
 
 import axios from "axios";
 import {
   DivCard,
   FlexBox,
-  FlexBox1,
   FlexBox2,
   H1,
   P,
   Button,
   ButtonAdd,
-  Text,
-  Name,
-  Job,
-  Company,
 } from "../styled-components/DisplayRessources";
 
 export default function RessourcePage() {
@@ -23,18 +19,15 @@ export default function RessourcePage() {
 
   useEffect(() => {
     setLoading(true);
-    axios({
-      method: "GET",
-      url: `http://localhost:3001/ressourcesext`,
-    }).then((res) => {
+    api.get(`/ressourcesext`).then((res) => {
       setRessources(res.data);
       setLoading(false);
     });
   }, [ressources]);
 
   const removeDoc = (idRessources_Externes) => {
-    let url = `http://localhost:3001/ressourcesext/${idRessources_Externes}`;
-    axios.delete(url).then((res) => {
+    let url = `/ressourcesext/${idRessources_Externes}`;
+    api.delete(url).then((res) => {
       const del = ressources.filter(
         (ressources) =>
           idRessources_Externes !== ressources.idRessources_Externes

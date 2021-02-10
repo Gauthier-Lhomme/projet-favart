@@ -4,12 +4,7 @@ import axios from "axios";
 
 import {
   FlexBox,
-  FlexBox1,
   FlexBox2,
-  Name,
-  Job,
-  Company,
-  Text,
   Card,
   FlexText,
   CardText,

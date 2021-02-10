@@ -11,7 +11,6 @@ import {
   Title,
   IdeeForte,
   Text,
-  Liste,
   Card2,
   CardText2,
   CardImg2,

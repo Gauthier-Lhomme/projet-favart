@@ -4,28 +4,30 @@ import { Reset } from "styled-reset";
 
 import Connexion from "./components/Connection";
 import HeaderTop from "./components/HeaderTop";
-import ClientPage from "./components/ClientPage";
 import MainPage from "./components/header/HeaderMenu01";
 import Agissons from "./components/header/HeaderMenu02";
 import IlsEtElles from "./components/header/HeaderMenu03";
 import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
+
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
+import PageFavart from "./components/PageFavart";
+
 import MentionsLegales from "./components/LegalNotice";
 import ContactMail from "./components/ContactMail";
 
 import UpdateClient from "./components/UpdateClientForm";
-import ClientProfil from "./components/ClientProfil";
+import ClientPage from "./components/ClientPage";
 import SideBar from "./components/Sidebar";
 
+import ClientProfil from "./components/ClientProfil";
 import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
 import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
-import DisplayRessources from "./components/DisplayRessources";
 
-import ConnexionLogin from "./components/ConnexionLogin";
+import DisplayRessources from "./components/DisplayRessources";
 
 export default function App() {
   const [token, setToken] = useState("");
@@ -45,7 +47,7 @@ export default function App() {
           <Inscription setToken={setIdClient} />
         </Route>
         <Route exact path="/sidebar">
-          <SideBar idClient={idClient} />
+          <SideBar setToken={setToken} />
         </Route>
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/mentionslegales" component={MentionsLegales} />
@@ -53,6 +55,7 @@ export default function App() {
         <Route exact path="/connection">
           <Connexion setToken={setToken} />
         </Route>
+        <Route path="/pagefavart" component={PageFavart} />
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/updateclient">
           <UpdateClient setId={setIdClient} />

@@ -1,9 +1,32 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
+export const FlexBox = styled.div`
+  display: flex;
+  height: 100vh;
+  @media ${Device.mobile} {
+    flex-direction: column;
+  }
+`;
+
+export const FlexBox1 = styled.div`
+  flex: 1;
+  background: rgb(35, 134, 201);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 134, 201, 1) 0%,
+    rgba(18, 34, 57, 1) 100%
+  );
+  height: 100vh;
+  @media ${Device.mobile} {
+    flex-direction: column;
+    height: 5vh;
+  }
+`;
+
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 200vh;
+  height: 100vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 8vh;
@@ -12,6 +35,7 @@ export const FlexBox2 = styled.div`
 export const P = styled.h1`
   font-size: 1.5rem;
   font-family: "Josefin Sans";
+  margin-top: 20vh;
   @media ${Device.mobile} {
     margin-left: 2vw;
   }
@@ -19,7 +43,7 @@ export const P = styled.h1`
 
 export const Formulaire = styled.form`
   width: 65vw;
-  margin-top: 8vh;
+  margin-top: 5vh;
   margin-right: 2vw;
   display: flex;
   font-size: 1.5em;
