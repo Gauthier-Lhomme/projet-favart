@@ -7,6 +7,7 @@ import {
   Link1,
 } from "../styled-components/Sidebar";
 import React, { useState, useEffect } from "react";
+
 import { api } from "../conf";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -22,6 +23,11 @@ export default function Sidebar({ setToken }) {
   function handleClick(e) {
     e.preventDefault();
     dispatch({ type: "SET_TOKEN", test: "0" });
+  }
+
+  function handleClick(e) {
+    e.preventDefault();
+    dispatch({ type: "UNSET_ID" });
   }
 
   useEffect(() => {

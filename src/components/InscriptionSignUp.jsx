@@ -41,6 +41,7 @@ export default function useForm(validateInfo) {
       dispatch({ type: "SET_ID", test: res.data.idClient });
       dispatch({ type: "SET_INFOS", test: res.data.infosClients });
       dispatch({ type: "SET_INFOS", test: res.data.tokenClient });
+
       history.push("/clientpage");
     });
   };

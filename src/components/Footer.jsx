@@ -24,22 +24,21 @@ export default function Footer() {
         <div>
           <ul>
             <Li>Paris</Li>
-            <Li>94, rue La Fayette</Li>
-            <Li>75009 PARIS</Li>
+            <Li>16, Place de la Bourse, 3ème étage</Li>
+            <Li>75002 Paris</Li>
           </ul>
         </div>
         <div>
           <ul>
-            <Li>Le Touquet</Li>
-            <Li>94, rue La Fayette</Li>
-            <Li>75009 PARIS</Li>
+            <Li>Métropole Européenne de Lille / Roubaix - Eurotéléport</Li>
+            <Li>84, Boulevard du Général Leclerc</Li>
+            <Li>Paraboles II, 7ème étage Gauche</Li>
+            <Li>59100 Roubaix</Li>
           </ul>
         </div>
         <div>
           <ul>
-            <Li>Roubaix</Li>
-            <Li>94, rue La Fayette</Li>
-            <Li>75009 PARIS</Li>
+            <Li>Côte d’Opale </Li>
           </ul>
         </div>
       </DivAdress>
@@ -47,8 +46,9 @@ export default function Footer() {
         <div>
           <H1Underline>Nous contacter</H1Underline>
           <ul>
-            <Li>Tél. :+33(0) 155 333 333</Li>
-            <Li>Mail : contact@favart.com</Li>
+            <Li>Yoann Geffroy </Li>
+            <Li>Tél. : 06 01 04 80 62</Li>
+            <Li>Mail : yoann.geffroy@favart.com</Li>
           </ul>
         </div>
         <div>
