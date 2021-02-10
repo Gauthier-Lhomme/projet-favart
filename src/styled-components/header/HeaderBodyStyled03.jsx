@@ -29,6 +29,8 @@ export const Title = styled.h1`
   font-family: "JosefinSans-SemiBold";
   @media ${Device.mobile} {
     font-size: 2.5rem;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
 `;
 

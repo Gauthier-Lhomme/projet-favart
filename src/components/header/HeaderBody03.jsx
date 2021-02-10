@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Main from "../Main";
+import ProjetsCards from "../ProjetsCards";
+import Logo from "../Logo";
 import Footer from "../Footer";
 
 import {
@@ -44,7 +45,8 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <Main />
+            <ProjetsCards />
+            <Logo />
             <Footer />
           </>
         )}
