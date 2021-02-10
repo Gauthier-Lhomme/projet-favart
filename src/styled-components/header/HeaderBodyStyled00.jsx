@@ -23,7 +23,7 @@ export const Sommaire = styled.div`
 
 export const Title = styled.div`
   font-size: 2rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   padding-top: 5vh;
   text-decoration: none;
   @media ${Device.mobile} {

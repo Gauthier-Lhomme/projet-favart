@@ -31,7 +31,7 @@ export const FlexBox2 = styled.div`
 
 export const P = styled.h1`
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     margin-left: 2vw;
   }
@@ -40,7 +40,7 @@ export const P = styled.h1`
 export const P2 = styled.p`
   font-size: 1rem;
   margin-top: 10vh;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     margin-left: 2vw;
     margin-top: 5vh;
@@ -101,7 +101,7 @@ export const Label = styled.label`
   color: black;
   margin-bottom: 0.5vw;
   width: 30%;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     display: none;
   }
@@ -110,7 +110,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   width: 50%;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 82vw;
   }
@@ -119,7 +119,7 @@ export const Input = styled.input`
 export const InputSite = styled.input`
   width: 75.6%;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 82vw;
   }
@@ -145,7 +145,7 @@ export const LabelCheck = styled.label`
   color: black;
   margin-bottom: 0.5vw;
   width: 30%;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 50%;
     margin-bottom: 0;
@@ -156,7 +156,7 @@ export const LabelCheck = styled.label`
 export const InputCheck = styled.input`
   width: 20%;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
   }
 `;
@@ -165,7 +165,7 @@ export const Textarea = styled.textarea`
   width: 77%;
   height: 25vh;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 86vw;
   }
@@ -175,7 +175,7 @@ export const TextareaEnvies = styled.textarea`
   width: 77%;
   height: 25vh;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 86vw;
   }
@@ -184,7 +184,7 @@ export const TextareaEnvies = styled.textarea`
 export const StyledButton = styled.button`
   padding: 2 2vw;
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   border: none;
   background: #122239;
   color: #c4c1c7;

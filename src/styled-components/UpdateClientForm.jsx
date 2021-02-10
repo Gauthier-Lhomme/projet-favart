@@ -35,7 +35,7 @@ export const FlexBoxClient = styled.div`
 
 export const P = styled.h1`
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     margin-left: 2vw;
   }
@@ -110,7 +110,7 @@ export const Label = styled.label`
   color: black;
   margin-bottom: 0.5vw;
   width: 30%;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     display: none;
   }
@@ -119,7 +119,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   width: 50%;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 82vw;
   }
@@ -128,7 +128,7 @@ export const Input = styled.input`
 export const InputSite = styled.input`
   width: 75.6%;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   @media ${Device.mobile} {
     width: 82vw;
     margin-top: 9vh;
@@ -139,7 +139,7 @@ export const Textarea = styled.textarea`
   width: 77%;
   height: 25vh;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   resize: none;
   @media ${Device.mobile} {
     width: 86vw;
@@ -150,7 +150,7 @@ export const TextareaEnvies = styled.textarea`
   width: 77%;
   height: 25vh;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   resize: none;
   @media ${Device.mobile} {
     width: 86vw;
@@ -161,7 +161,7 @@ export const TextareaEnvies = styled.textarea`
 export const StyledButton = styled.button`
   padding: 2 2vw;
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   border: none;
   background: #122239;
   color: #c4c1c7;

@@ -10,7 +10,7 @@ import {
   Label,
   Input,
   StyledButton,
-  InputDescription
+  InputDescription,
 } from "../styled-components/UpdateRessourcesForm";
 
 import SideBar from "./Sidebar";

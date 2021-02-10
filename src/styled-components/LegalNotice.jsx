@@ -6,7 +6,7 @@ export const Background = styled.div`
 `;
 
 export const H1 = styled.h1`
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 2rem;
   margin-top: 15vh;
   margin-left: 10vw;
@@ -17,7 +17,7 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 1.4rem;
   margin-top: 5vh;
   margin-left: 10vw;
@@ -28,7 +28,7 @@ export const H2 = styled.h2`
 `;
 
 export const P = styled.p`
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 1.2rem;
   margin-top: 2vh;
   margin-left: 10vw;

@@ -47,7 +47,7 @@ export const Button1 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -70,7 +70,7 @@ export const Button2 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -93,7 +93,7 @@ export const Button3 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -116,7 +116,7 @@ export const Button4 = styled.button`
   color: white;
   margin-bottom: 5vh;
   border-radius: 10px;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   font-size: 1.8rem;
   cursor: pointer;
   transition: all ease 0.5s;

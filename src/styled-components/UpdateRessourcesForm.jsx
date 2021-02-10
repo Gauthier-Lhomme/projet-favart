@@ -35,7 +35,7 @@ export const FlexBox2 = styled.div`
 
 export const P = styled.h1`
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   margin-top: 20vh;
   @media ${Device.mobile} {
     margin-left: 2vw;
@@ -156,7 +156,7 @@ export const TextareaEnvies = styled.textarea`
 export const StyledButton = styled.button`
   padding: 2 2vw;
   font-size: 1.5rem;
-  font-family: "Josefin Sans";
+  font-family: "JosefinSans-Regular";
   border: none;
   background: #122239;
   color: #c4c1c7;
