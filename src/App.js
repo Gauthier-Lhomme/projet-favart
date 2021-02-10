@@ -43,7 +43,6 @@ export default function App() {
         <Route path="/agissons" component={Agissons} />
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
-
         <Route exact path="/inscription">
           <Inscription setToken={setIdClient} />
         </Route>
@@ -56,9 +55,7 @@ export default function App() {
         <Route exact path="/connection">
           <Connexion setToken={setToken} />
         </Route>
-
         <Route path="/pagefavart" component={PageFavart} />
-
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/updateclient">
           <UpdateClient setId={setIdClient} />
@@ -66,7 +63,6 @@ export default function App() {
         <Route exact path="/clientprofil">
           <ClientProfil setToken={setToken} />
         </Route>
-
         <Route exact path="/mentionslegales" component={MentionsLegales} />
         <Route exact path="/contact" component={ContactMail} />
         <Route path="/DisplayClient" component={DisplayClient} />
@@ -75,7 +71,6 @@ export default function App() {
         <Route path="/ressourcesext" component={RessourcePageExt} />
         <Route path="/addressources" component={RessourcesForm} />
         <Route path="/addressourcesext" component={RessourcesFormExt} />
-
         <Route path="/agissons" component={Agissons} />
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
