@@ -21,12 +21,11 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_tzb8m7g",
-      "template_stdceyl",
-      e.target,
-      "user_NKYLcqZwiFms9AL3RjBZO"
-    );
+    const service_key = process.env.REACT_APP_SERVICE;
+    const template_key = process.env.REACT_APP_TEMPLATE;
+    const user_key = process.env.REACT_APP_USER;
+
+    emailjs.sendForm(service_key, template_key, e.target, user_key);
     e.target.reset();
   }
 
