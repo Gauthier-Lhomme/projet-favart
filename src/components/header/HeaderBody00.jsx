@@ -17,7 +17,7 @@ export default function HeaderBody() {
       <Page>
         <Sommaire>
           <Title>
-            <H1 to="/">Pourquoi nous existons ?</H1>
+            <H1 to="/main">Pourquoi nous existons ?</H1>
           </Title>
           <ul>
             <Li>Pourquoi Favart ?</Li>
