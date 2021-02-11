@@ -10,7 +10,6 @@ This project is split into several repositories.
 - The Backend : [here](https://github.com/WildCodeSchool/lille-0920-js-p3-favart-backend)
 - The AdminPanel : [here](https://github.com/WildCodeSchool/lille-0920-js-p3-favart-admin)
 
-
 ## Technologies used
 
 ### Front-End

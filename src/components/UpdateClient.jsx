@@ -28,11 +28,9 @@ export default function useForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     delete values.password2;
-    api
-      .patch(`/client/${idClient}`, values)
-      .then((res) => {
-        setValues(res.data);
-      });
+    api.patch(`/client/${idClient}`, values).then((res) => {
+      setValues(res.data);
+    });
   };
 
   return { handleChange, values, handleSubmit };

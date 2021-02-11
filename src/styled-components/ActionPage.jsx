@@ -91,7 +91,7 @@ export const Button = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 17vh;
+  margin-top: 20vh;
   padding: 2vh;
   width: 18vw;
   cursor: pointer;
@@ -139,7 +139,7 @@ export const ButtonFlash = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 24vh;
+  margin-top: 27vh;
   padding: 2vh;
   width: 21vw;
   cursor: pointer;

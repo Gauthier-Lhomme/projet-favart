@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Page = styled.div`
   background-color: #f2f8fc;
+  font-family: "JosefinSans-SemiBold";
 `;
 
 export const FirstTitle = styled.p`

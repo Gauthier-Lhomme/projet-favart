@@ -80,10 +80,10 @@ export const H1Underline = styled.h1`
 `;
 
 export const UlIconsMobile = styled.ul`
-  display: flex;
-  justify-content: space-around;
-  @media ${Device.desktop} {
-    display: none;
+  display: none;
+  @media ${Device.mobile} {
+    display: flex;
+    justify-content: space-around;
   }
 `;
 
